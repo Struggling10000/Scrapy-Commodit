@@ -20,7 +20,7 @@ class MysqlPipeline(object):
     dbname = 'test'
     db = None
     cursor = None
-    sql = 'INSERT INTO item(itemId,itemTittle,itemPrice,itemImg) VALUES("%s","%s","%s","%s")'
+    sql = 'INSERT INTO item(itemId,itemTitle,itemPrice,itemImg) VALUES("%s","%s","%s","%s")'
 
     def __init__(self):
         self.host = settings['MYSQL_HOST']

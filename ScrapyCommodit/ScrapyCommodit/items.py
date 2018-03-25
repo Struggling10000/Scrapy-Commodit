@@ -12,7 +12,7 @@ class ScrapycommoditItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     itemId = scrapy.Field()
-    itemTittle = scrapy.Field()
+    itemTitle = scrapy.Field()
     itemPrice = scrapy.Field()
     itemImg = scrapy.Field()
     #itemDesc = scrapy.Field()
