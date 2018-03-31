@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
-import uuid
-
+import random
 import scrapy
 from scrapy.http import Request
 from scrapy.selector import Selector
@@ -23,7 +22,7 @@ class CommoditspiderSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            yield SplashRequest(url, self.parse, args={'wait': 10})
+            yield SplashRequest(url, self.parse, args={'wait': 1})
 
     def parse(self, response):
         log = self.logger
@@ -34,9 +33,8 @@ class CommoditspiderSpider(scrapy.Spider):
                 # print(li.extract())
                 item = ScrapycommoditItem()
 
-                item["itemId"] = uuid.uuid1()
-
-
+                random.seed()
+                item["itemId"] = int(random.random()*100000000000000)
 
                 img = li.xpath(
                     'div[2]/a/img/@data-lazy-img').extract()[0].replace("\r\n", "").strip()
@@ -45,7 +43,7 @@ class CommoditspiderSpider(scrapy.Spider):
                     'div[2]/a/img/@src').extract()[0].replace("\r\n", "").strip()
                 item['itemImg'] = urljoin(response.url, img)
 
-                item['itemTittle'] = li.xpath(
+                item['itemTitle'] = li.xpath(
                     'div[3]/a/text()').extract()[0].replace("\r\n", "").strip()
 
                 item['itemPrice'] = li.xpath(
@@ -57,6 +55,6 @@ class CommoditspiderSpider(scrapy.Spider):
             nextPage = response.xpath(
                 '/html/body/div[8]/div[2]/div[4]/div/div/span/a[7]/@href').extract()[0]
             nextPage = urljoin(response.url, nextPage)
-            yield SplashRequest(nextPage, callback=self.parse,args={'wait': 5})
+            yield SplashRequest(nextPage, callback=self.parse,args={'wait': 1})
         except Exception as e:
             log.error(e)

@@ -44,8 +44,11 @@ class MysqlPipeline(object):
             spider.logger.error(e)
 
     def process_item(self, item, spider):
+        spider.logger.info(item)
         try:
-            self.cursor.execute(self.sql % (
-                item['itemId'], item['itemTittle'], item['itemPrice'], item['itemImg']))
+            result = self.cursor.execute(self.sql % (float(item['itemId']), str(
+                item['itemTitle']), str(item['itemPrice']), str(item['itemImg'])))
+            spider.logger.info("result")
+            spider.logger.info(result)
         except Exception as e:
             spider.logger.error(e)

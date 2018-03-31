@@ -1,0 +1,2343 @@
+2018-03-31 15:37:12 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: ScrapyCommodit)
+2018-03-31 15:37:12 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'ScrapyCommodit', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'ScrapyCommodit.spiders', 'SPIDER_MODULES': ['ScrapyCommodit.spiders'], 'USER_AGENT': ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)', 'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)', 'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)', 'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0', 'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.11 TaoBrowser/2.0 Safari/536.11', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.71 Safari/537.1 LBBROWSER', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; LBBROWSER)', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E; LBBROWSER)', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E)', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE)', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:16.0) Gecko/20100101 Firefox/16.0', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11', 'Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36']}
+2018-03-31 15:37:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-31 15:37:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ScrapyCommodit.middlewares.SetAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-31 15:37:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'ScrapyCommodit.middlewares.ScrapycommoditSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-31 15:37:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['ScrapyCommodit.pipelines.ScrapycommoditPipeline',
+ 'ScrapyCommodit.pipelines.MysqlPipeline']
+2018-03-31 15:37:12 [scrapy.core.engine] INFO: Spider opened
+2018-03-31 15:37:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-31 15:37:13 [CommoditSpider] INFO: Spider opened: CommoditSpider
+2018-03-31 15:37:13 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-31 15:37:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:37:14 [CommoditSpider] INFO: {'itemId': 69913226296078,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t10885/90/1676944853/291012/8f1f8485/59e5a7efNc8a36761.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '曹文轩纯美小说：草房子（2016版）'}
+2018-03-31 15:37:15 [py.warnings] WARNING: c:\python36\lib\site-packages\pymysql\cursors.py:165: Warning: (1265, "Data truncated for column 'itemImg' at row 1")
+  result = self._query(query)
+
+2018-03-31 15:37:15 [CommoditSpider] INFO: result
+2018-03-31 15:37:15 [CommoditSpider] INFO: 1
+2018-03-31 15:37:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:15 [CommoditSpider] INFO: {'itemId': 50923697103343,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t13051/98/2098947641/472686/b33c437e/5a40bca7N5a85c922.jpg',
+ 'itemPrice': '¥45.20',
+ 'itemTitle': '2019恋练有词：新东方考研英语词汇识记与应用大全（附赠考研英语高分锦囊）'}
+2018-03-31 15:37:15 [CommoditSpider] INFO: result
+2018-03-31 15:37:15 [CommoditSpider] INFO: 1
+2018-03-31 15:37:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:15 [CommoditSpider] INFO: {'itemId': 34380394415540,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t9439/316/1197652185/193711/523c1d6d/59b5f21dNe2b83781.jpg',
+ 'itemPrice': '¥104.50',
+ 'itemTitle': '大冰京东套装：么么哒+摸摸头+好吗好的+我不（套装共4册）'}
+2018-03-31 15:37:15 [CommoditSpider] INFO: result
+2018-03-31 15:37:15 [CommoditSpider] INFO: 1
+2018-03-31 15:37:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:15 [CommoditSpider] INFO: {'itemId': 41593066069109,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t14263/96/2664829027/666391/326adbf2/5aaf7631N0ab39f79.jpg',
+ 'itemPrice': '¥59.60',
+ 'itemTitle': '全球通史 从史前史到21世纪（ 第7版 修订版 中文版 套装上下册）（赠送精美地 ...'}
+2018-03-31 15:37:16 [CommoditSpider] INFO: result
+2018-03-31 15:37:16 [CommoditSpider] INFO: 1
+2018-03-31 15:37:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:16 [CommoditSpider] INFO: {'itemId': 28512577308613,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t2686/205/715200570/148688/f9024b22/5721c21eN6aaeecda.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '曹文轩纯美小说：青铜葵花（2016版）'}
+2018-03-31 15:37:16 [CommoditSpider] INFO: result
+2018-03-31 15:37:16 [CommoditSpider] INFO: 1
+2018-03-31 15:37:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:16 [CommoditSpider] INFO: {'itemId': 95118317243180,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t10402/243/1768047745/296939/203b1ba0/59e5a81fN443fc2d6.jpg',
+ 'itemPrice': '¥14.00',
+ 'itemTitle': '曹文轩纯美小说系列：根鸟（2016版）'}
+2018-03-31 15:37:17 [CommoditSpider] INFO: result
+2018-03-31 15:37:17 [CommoditSpider] INFO: 1
+2018-03-31 15:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:17 [CommoditSpider] INFO: {'itemId': 18422719536689,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t1540/363/126909555/150883/5f54dc4/555bda38Na32e9ad6.jpg',
+ 'itemPrice': '¥14.90',
+ 'itemTitle': '新版林格伦作品选集 美绘版-长袜子皮皮'}
+2018-03-31 15:37:17 [CommoditSpider] INFO: result
+2018-03-31 15:37:17 [CommoditSpider] INFO: 1
+2018-03-31 15:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:17 [CommoditSpider] INFO: {'itemId': 69462065138592,
+ 'itemImg': 'http://img13.360buyimg.com/n3/g8/M03/0C/13/rBEHaFCHfscIAAAAAACmu1u7nIsAACdlABopHoAAKbT099.jpg',
+ 'itemPrice': '¥14.90',
+ 'itemTitle': '一年级大个子二年级小个子（注音版）'}
+2018-03-31 15:37:18 [CommoditSpider] INFO: result
+2018-03-31 15:37:18 [CommoditSpider] INFO: 1
+2018-03-31 15:37:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:18 [CommoditSpider] INFO: {'itemId': 22740106614952,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t5749/151/2155508718/91400/b98f9834/592d2215N0f718a02.jpg',
+ 'itemPrice': '¥31.10',
+ 'itemTitle': '时间简史（插图版）【荐书联盟推荐】'}
+2018-03-31 15:37:18 [CommoditSpider] INFO: result
+2018-03-31 15:37:18 [CommoditSpider] INFO: 1
+2018-03-31 15:37:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:18 [CommoditSpider] INFO: {'itemId': 40648439322501,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t5206/340/403894813/263043/eac9cb12/58ff13cfN59aceeb6.jpg',
+ 'itemPrice': '¥202.50',
+ 'itemTitle': '怪物大师系列（套装1-18册）'}
+2018-03-31 15:37:18 [CommoditSpider] INFO: result
+2018-03-31 15:37:18 [CommoditSpider] INFO: 1
+2018-03-31 15:37:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:18 [CommoditSpider] INFO: {'itemId': 7974000425286,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t6124/187/760955031/570043/ef3f4f4e/592bf16cN9315c9fc.jpg',
+ 'itemPrice': '¥19.90',
+ 'itemTitle': '天才在左疯子在右完整版\u3000[荐书联盟推荐]'}
+2018-03-31 15:37:19 [CommoditSpider] INFO: result
+2018-03-31 15:37:19 [CommoditSpider] INFO: 1
+2018-03-31 15:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:19 [CommoditSpider] INFO: {'itemId': 5423110542724,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t8038/54/2343125972/309204/87a64e3e/59cc5804N5369795d.jpg',
+ 'itemPrice': '¥44.90',
+ 'itemTitle': '顾家北手把手教你雅思写作（5.0版）'}
+2018-03-31 15:37:19 [CommoditSpider] INFO: result
+2018-03-31 15:37:19 [CommoditSpider] INFO: 1
+2018-03-31 15:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:19 [CommoditSpider] INFO: {'itemId': 92608218345031,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t4975/322/2389951349/211142/e8b1c80d/58fef4fbNe39a7707.jpg',
+ 'itemPrice': '¥17.40',
+ 'itemTitle': '新华字典（双色本 第11版）'}
+2018-03-31 15:37:19 [CommoditSpider] INFO: result
+2018-03-31 15:37:19 [CommoditSpider] INFO: 1
+2018-03-31 15:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:19 [CommoditSpider] INFO: {'itemId': 12451610813713,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2233/5/1992778828/453565/eeeaab1d/5695d9c6N66f9239b.jpg',
+ 'itemPrice': '¥18.00',
+ 'itemTitle': '小猪唏哩呼噜（注音版 套装共2册）'}
+2018-03-31 15:37:20 [CommoditSpider] INFO: result
+2018-03-31 15:37:20 [CommoditSpider] INFO: 1
+2018-03-31 15:37:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:20 [CommoditSpider] INFO: {'itemId': 97351718905383,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2470/299/2541746346/564200/e68c6c42/56e21e4dN8b72a0cb.jpg',
+ 'itemPrice': '¥18.80',
+ 'itemTitle': '窗边的小豆豆（新版）'}
+2018-03-31 15:37:20 [CommoditSpider] INFO: result
+2018-03-31 15:37:20 [CommoditSpider] INFO: 1
+2018-03-31 15:37:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:20 [CommoditSpider] INFO: {'itemId': 94353934349086,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t15667/160/563569281/151713/d4fab374/5a373299N4978d724.jpg',
+ 'itemPrice': '¥63.00',
+ 'itemTitle': '原则'}
+2018-03-31 15:37:21 [CommoditSpider] INFO: result
+2018-03-31 15:37:21 [CommoditSpider] INFO: 1
+2018-03-31 15:37:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:21 [CommoditSpider] INFO: {'itemId': 99047272766136,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t8146/339/2042467772/188002/4f5fbe4a/59c21682N21f7f9d4.jpg',
+ 'itemPrice': '¥35.60',
+ 'itemTitle': '基金从业资格考试教材2018 基金从业资格考试统编教材 证券投资基金（第二版）下 ...'}
+2018-03-31 15:37:21 [CommoditSpider] INFO: result
+2018-03-31 15:37:21 [CommoditSpider] INFO: 1
+2018-03-31 15:37:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:21 [CommoditSpider] INFO: {'itemId': 24464754203869,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t17050/142/107699987/346339/e1d480c6/5a5d6113N236a00ce.jpg',
+ 'itemPrice': '¥36.80',
+ 'itemTitle': '星火英语 英语四级真题试卷 2018年6月全真试题+标准模拟 词汇写作翻译听力阅 ...'}
+2018-03-31 15:37:21 [CommoditSpider] INFO: result
+2018-03-31 15:37:21 [CommoditSpider] INFO: 1
+2018-03-31 15:37:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:21 [CommoditSpider] INFO: {'itemId': 70031569550184,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t3082/278/4352368435/211098/425fc11/583e9d23N3884fc71.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '黄蓓佳倾情小说系列：我要做好孩子'}
+2018-03-31 15:37:22 [CommoditSpider] INFO: result
+2018-03-31 15:37:22 [CommoditSpider] INFO: 1
+2018-03-31 15:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:22 [CommoditSpider] INFO: {'itemId': 3124285107572,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t17143/194/599958538/284097/e8937639/5a97be9aNdc3a985f.jpg',
+ 'itemPrice': '¥59.80',
+ 'itemTitle': '北斗童书·世界地图：跟爸爸一起去旅行 全新升级（百科知识版 精装绘本）（附赠19 ...'}
+2018-03-31 15:37:23 [CommoditSpider] INFO: result
+2018-03-31 15:37:23 [CommoditSpider] INFO: 1
+2018-03-31 15:37:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:37:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:37:25 [CommoditSpider] INFO: {'itemId': 23172087577068,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t1675/48/1231679166/575556/e9e945d0/55c99f98N774df4d8.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新版中日交流标准日本语初级（第二版 套装上下册 附光盘）'}
+2018-03-31 15:37:26 [CommoditSpider] INFO: result
+2018-03-31 15:37:26 [CommoditSpider] INFO: 1
+2018-03-31 15:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:26 [CommoditSpider] INFO: {'itemId': 20418086723359,
+ 'itemImg': 'http://img11.360buyimg.com/n3/g12/M00/00/1A/rBEQYVMqVLUIAAAAAAVy6DthPs8AAC_GQEbUY8ABXMA270.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·十万个为什么（幼儿注音版 套装共8册）'}
+2018-03-31 15:37:26 [CommoditSpider] INFO: result
+2018-03-31 15:37:26 [CommoditSpider] INFO: 1
+2018-03-31 15:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:26 [CommoditSpider] INFO: {'itemId': 74642104793518,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t2005/16/396566077/381933/1f52e7b4/5604ebd9N4e34149c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '大冰新畅销作品 （套装共2册）'}
+2018-03-31 15:37:26 [CommoditSpider] INFO: result
+2018-03-31 15:37:26 [CommoditSpider] INFO: 1
+2018-03-31 15:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:26 [CommoditSpider] INFO: {'itemId': 75785440299997,
+ 'itemImg': 'http://img10.360buyimg.com/n3/g14/M00/0E/00/rBEhVlIkRoYIAAAAAALETwnEaSQAACvGQCSl4IAAsRn847.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '金庸作品集 射雕英雄传（朗声旧版 套装05-08册）'}
+2018-03-31 15:37:27 [CommoditSpider] INFO: result
+2018-03-31 15:37:27 [CommoditSpider] INFO: 1
+2018-03-31 15:37:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:27 [CommoditSpider] INFO: {'itemId': 61243683013805,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t12463/116/483030616/1061244/35facde9/5a0c272eN3bbae778.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '无敌舰队（汗青堂丛书016）'}
+2018-03-31 15:37:27 [CommoditSpider] INFO: result
+2018-03-31 15:37:27 [CommoditSpider] INFO: 1
+2018-03-31 15:37:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:27 [CommoditSpider] INFO: {'itemId': 72422799139798,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t6439/173/953771713/400132/963dc0a0/59479686Nc41d1362.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师19：绝望的圣城囚笼'}
+2018-03-31 15:37:28 [CommoditSpider] INFO: result
+2018-03-31 15:37:28 [CommoditSpider] INFO: 1
+2018-03-31 15:37:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:28 [CommoditSpider] INFO: {'itemId': 86905119868439,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2590/219/2241829193/186594/31443d8c/575e45bfNd1fd1f28.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '浮生六记（汪涵推荐，全译本）'}
+2018-03-31 15:37:28 [CommoditSpider] INFO: result
+2018-03-31 15:37:28 [CommoditSpider] INFO: 1
+2018-03-31 15:37:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:28 [CommoditSpider] INFO: {'itemId': 31137207644496,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t5929/285/1301108041/262087/9a8120c5/5930cadcN81d9efe8.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师·御风者的青色罪印'}
+2018-03-31 15:37:29 [CommoditSpider] INFO: result
+2018-03-31 15:37:29 [CommoditSpider] INFO: 1
+2018-03-31 15:37:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:29 [CommoditSpider] INFO: {'itemId': 63049521341703,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t3523/172/1973121135/577623/9778f24f/583d5831Nec5b7c63.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新世纪汉英大词典(第二版)(缩印本)'}
+2018-03-31 15:37:29 [CommoditSpider] INFO: result
+2018-03-31 15:37:29 [CommoditSpider] INFO: 1
+2018-03-31 15:37:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:29 [CommoditSpider] INFO: {'itemId': 75810536153737,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t4414/15/3508854418/162325/e65a2199/58fef4daNeef73399.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新华字典（第11版）（单色本）'}
+2018-03-31 15:37:29 [CommoditSpider] INFO: result
+2018-03-31 15:37:29 [CommoditSpider] INFO: 1
+2018-03-31 15:37:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:29 [CommoditSpider] INFO: {'itemId': 35988934490348,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t6796/251/2399972693/810602/a71b27ac/598bb987N8bc2b687.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '凯迪克金奖绘本系列：火车头+灯船+登月（陆海空三部曲 套装全3册）'}
+2018-03-31 15:37:30 [CommoditSpider] INFO: result
+2018-03-31 15:37:30 [CommoditSpider] INFO: 1
+2018-03-31 15:37:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:30 [CommoditSpider] INFO: {'itemId': 80477416343627,
+ 'itemImg': 'http://img10.360buyimg.com/n3/11439/90dbb13c-65e8-4ac6-b130-375a1d9fcb39.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '大设计\u3000【荐书联盟推荐】'}
+2018-03-31 15:37:30 [CommoditSpider] INFO: result
+2018-03-31 15:37:30 [CommoditSpider] INFO: 1
+2018-03-31 15:37:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:30 [CommoditSpider] INFO: {'itemId': 48654821874208,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t8929/47/1842592084/259072/1ccde922/59c07e13Nb2230e44.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '法医秦明系列：偷窥者+幸存者+清道夫+第十一根手指+无声的证词+尸语者（套装共6 ...'}
+2018-03-31 15:37:31 [CommoditSpider] INFO: result
+2018-03-31 15:37:31 [CommoditSpider] INFO: 1
+2018-03-31 15:37:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:31 [CommoditSpider] INFO: {'itemId': 62625987071775,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t6064/117/754680091/281929/df14e291/592bf168N5c3713a3.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': 'DK万物运转的秘密 给青少年的物理世界入门书'}
+2018-03-31 15:37:32 [CommoditSpider] INFO: result
+2018-03-31 15:37:32 [CommoditSpider] INFO: 1
+2018-03-31 15:37:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:32 [CommoditSpider] INFO: {'itemId': 17433120655158,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t7825/185/2542515982/873019/e2f29eec/59b10d89N9737a999.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·中国地图：跟爸爸一起去旅行（百科知识版）大开本、精装绘本'}
+2018-03-31 15:37:32 [CommoditSpider] INFO: result
+2018-03-31 15:37:32 [CommoditSpider] INFO: 1
+2018-03-31 15:37:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:32 [CommoditSpider] INFO: {'itemId': 88107745316503,
+ 'itemImg': 'http://img12.360buyimg.com/n3/g14/M09/17/18/rBEhVVMhXCAIAAAAAAXAlbaEXfAAAKIXACephYABcCt020.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '朗文·外研社·新概念英语1：英语初阶（新版）'}
+2018-03-31 15:37:32 [CommoditSpider] INFO: result
+2018-03-31 15:37:32 [CommoditSpider] INFO: 1
+2018-03-31 15:37:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:32 [CommoditSpider] INFO: {'itemId': 14479968011708,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t1705/189/702227414/177982/cc8c12f0/55dab54dN5271c377.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国科幻基石丛书·三体（套装1-3册）'}
+2018-03-31 15:37:33 [CommoditSpider] INFO: result
+2018-03-31 15:37:33 [CommoditSpider] INFO: 1
+2018-03-31 15:37:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:33 [CommoditSpider] INFO: {'itemId': 83136308254611,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t4018/197/300113302/828723/82a26eee/5847c42aN921b98e1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·德国经典专注力亲子游戏书 第一辑（套装共3册）'}
+2018-03-31 15:37:33 [CommoditSpider] INFO: result
+2018-03-31 15:37:33 [CommoditSpider] INFO: 1
+2018-03-31 15:37:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:33 [CommoditSpider] INFO: {'itemId': 70388020444716,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t1558/48/132037296/109384/53e24e21/555d8a52N2892aeb0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '果壳中的宇宙·霍金（插图本）'}
+2018-03-31 15:37:34 [CommoditSpider] INFO: result
+2018-03-31 15:37:34 [CommoditSpider] INFO: 1
+2018-03-31 15:37:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:34 [CommoditSpider] INFO: {'itemId': 24000843408023,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t11296/184/2347456633/525456/cde4e6de/5a163339N08b869bf.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '东野圭吾：第十年的情人节'}
+2018-03-31 15:37:34 [CommoditSpider] INFO: result
+2018-03-31 15:37:34 [CommoditSpider] INFO: 1
+2018-03-31 15:37:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:37:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:37:36 [CommoditSpider] INFO: {'itemId': 95501323869560,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t19567/33/927487945/466795/ad256c94/5ab0bc64N004db76a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '深见春夫“想得美”图画书系列（彩色套装共5册）'}
+2018-03-31 15:37:37 [CommoditSpider] INFO: result
+2018-03-31 15:37:37 [CommoditSpider] INFO: 1
+2018-03-31 15:37:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:37 [CommoditSpider] INFO: {'itemId': 83630838510559,
+ 'itemImg': 'http://img14.360buyimg.com/n3/g14/M09/17/18/rBEhVlMhXCAIAAAAAAY0OVe5t3gAAKIXACtMWIABjRR310.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '朗文·外研社·新概念英语2 实践与进步（新版）'}
+2018-03-31 15:37:37 [CommoditSpider] INFO: result
+2018-03-31 15:37:37 [CommoditSpider] INFO: 1
+2018-03-31 15:37:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:37 [CommoditSpider] INFO: {'itemId': 52729987260279,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t532/248/743515818/96545/d04bb39a/54852a0eN6a93227e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '经典电影文学系列：阿甘正传'}
+2018-03-31 15:37:38 [CommoditSpider] INFO: result
+2018-03-31 15:37:38 [CommoditSpider] INFO: 1
+2018-03-31 15:37:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:38 [CommoditSpider] INFO: {'itemId': 48366830837592,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t4438/162/2502286270/541442/9346416d/58f08828N5824068a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '于丹 论语 心得'}
+2018-03-31 15:37:38 [CommoditSpider] INFO: result
+2018-03-31 15:37:38 [CommoditSpider] INFO: 1
+2018-03-31 15:37:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:38 [CommoditSpider] INFO: {'itemId': 55930759651731,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t13852/67/197568506/65137/2e9df40a/5a0566d8N7b05155d.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '习近平谈治国理政 第二卷（中文平装）'}
+2018-03-31 15:37:39 [CommoditSpider] INFO: result
+2018-03-31 15:37:39 [CommoditSpider] INFO: 1
+2018-03-31 15:37:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:39 [CommoditSpider] INFO: {'itemId': 88605585020279,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t6061/81/730791368/329364/8277302b/592bf164N2c6d2b50.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国科幻基石丛书·三体（1）/中国科幻银河奖特别获奖作品'}
+2018-03-31 15:37:39 [CommoditSpider] INFO: result
+2018-03-31 15:37:39 [CommoditSpider] INFO: 1
+2018-03-31 15:37:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:39 [CommoditSpider] INFO: {'itemId': 89520567258759,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t16534/222/2084168776/1001103/357100ed/5a77ca78Nf9e169be.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '解忧杂货店'}
+2018-03-31 15:37:40 [CommoditSpider] INFO: result
+2018-03-31 15:37:40 [CommoditSpider] INFO: 1
+2018-03-31 15:37:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:40 [CommoditSpider] INFO: {'itemId': 58522573546047,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t1441/343/143276299/84794/e0510e1c/555d8305N5bb5c1f0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '武志红心灵暖愈系列：身体知道答案+为何爱会伤人（套装共2册）'}
+2018-03-31 15:37:40 [CommoditSpider] INFO: result
+2018-03-31 15:37:40 [CommoditSpider] INFO: 1
+2018-03-31 15:37:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:40 [CommoditSpider] INFO: {'itemId': 91335863650716,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t958/13/725695028/138506/2afbee22/5540b1b8Ndd8fb049.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '女生贾梅全传'}
+2018-03-31 15:37:41 [CommoditSpider] INFO: result
+2018-03-31 15:37:41 [CommoditSpider] INFO: 1
+2018-03-31 15:37:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:41 [CommoditSpider] INFO: {'itemId': 79457222799439,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t2491/209/1396000181/372051/7ca40f9b/569c7aefNd5fb189c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '千面英雄（精装）'}
+2018-03-31 15:37:41 [CommoditSpider] INFO: result
+2018-03-31 15:37:41 [CommoditSpider] INFO: 1
+2018-03-31 15:37:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:41 [CommoditSpider] INFO: {'itemId': 56547960554031,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t15271/120/1933374026/262921/db9dc0a9/5a615355Nae3d1b0c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '杨红樱笑猫日记：又见小可怜'}
+2018-03-31 15:37:42 [CommoditSpider] INFO: result
+2018-03-31 15:37:42 [CommoditSpider] INFO: 1
+2018-03-31 15:37:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:42 [CommoditSpider] INFO: {'itemId': 82907418117078,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t16987/300/507543982/703124/ef4facb8/5a8fc1f2N2391bedd.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '淘气包马小跳漫画升级版（第一辑套装全十册）'}
+2018-03-31 15:37:42 [CommoditSpider] INFO: result
+2018-03-31 15:37:42 [CommoditSpider] INFO: 1
+2018-03-31 15:37:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:42 [CommoditSpider] INFO: {'itemId': 4421499207712,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t2737/328/1405538066/202534/aab816bf/573d821aN9de83d79.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '自在独行：贾平凹的独行世界（陈坤推荐）'}
+2018-03-31 15:37:42 [CommoditSpider] INFO: result
+2018-03-31 15:37:42 [CommoditSpider] INFO: 1
+2018-03-31 15:37:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:42 [CommoditSpider] INFO: {'itemId': 5016236375072,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t15580/128/2125230371/346649/92ccf62a/5a9236f1N531218cc.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '智力大挑战幼儿专注力培养（套装共12册）'}
+2018-03-31 15:37:43 [CommoditSpider] INFO: result
+2018-03-31 15:37:43 [CommoditSpider] INFO: 1
+2018-03-31 15:37:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:43 [CommoditSpider] INFO: {'itemId': 70592166765060,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t15031/194/2294576543/298875/b2fb67a8/5a93c36fN0647eda2.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '环球国家地理百科全书（套装共10册）'}
+2018-03-31 15:37:43 [CommoditSpider] INFO: result
+2018-03-31 15:37:43 [CommoditSpider] INFO: 1
+2018-03-31 15:37:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:43 [CommoditSpider] INFO: {'itemId': 99883301552502,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t5707/335/77395073/785561/914b78d3/59155836N41b2fe0e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': 'DK机械运转的秘密 动物园大逃亡！（精装版 全彩）'}
+2018-03-31 15:37:43 [CommoditSpider] INFO: result
+2018-03-31 15:37:43 [CommoditSpider] INFO: 1
+2018-03-31 15:37:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:43 [CommoditSpider] INFO: {'itemId': 28021482092872,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t15808/118/1462179270/345203/9b9b8123/5a52f0deN68e015f1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '父与子全集（套装共10册）'}
+2018-03-31 15:37:44 [CommoditSpider] INFO: result
+2018-03-31 15:37:44 [CommoditSpider] INFO: 1
+2018-03-31 15:37:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:44 [CommoditSpider] INFO: {'itemId': 74711587893499,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15301/196/2243879978/988202/98e92885/5a961443Nfaad5dff.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '伤心咖啡馆之歌（奥巴马送给两个女儿的礼物，孤独小说家麦卡勒斯的口碑神作）作家榜出 ...'}
+2018-03-31 15:37:44 [CommoditSpider] INFO: result
+2018-03-31 15:37:44 [CommoditSpider] INFO: 1
+2018-03-31 15:37:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:44 [CommoditSpider] INFO: {'itemId': 75046197698671,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t2059/279/549453706/121202/250d8bb0/56163c4cN0fb30ab1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '樱桃园·杨红樱注音童书 升级版：亲爱的笨笨猪（注音版）'}
+2018-03-31 15:37:45 [CommoditSpider] INFO: result
+2018-03-31 15:37:45 [CommoditSpider] INFO: 1
+2018-03-31 15:37:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:45 [CommoditSpider] INFO: {'itemId': 95190366200689,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t17827/172/93304178/346468/ac876f70/5a5d6113Ne7e2fe25.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '星火英语 英语六级真题试卷 2018年6月全真试题+标准模拟 词汇写作翻译听力阅 ...'}
+2018-03-31 15:37:45 [CommoditSpider] INFO: result
+2018-03-31 15:37:45 [CommoditSpider] INFO: 1
+2018-03-31 15:37:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:37:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:37:47 [CommoditSpider] INFO: {'itemId': 87724332031847,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t9160/276/1950634648/369277/eea5bd4f/59c1fd19Neeadc6d0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '我不 大冰2017新书'}
+2018-03-31 15:37:47 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-03-31 15:37:47 [CommoditSpider] INFO: result
+2018-03-31 15:37:47 [CommoditSpider] INFO: 1
+2018-03-31 15:37:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:47 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-03-31 15:37:47 [CommoditSpider] INFO: {'itemId': 78526671290617,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3283/110/726802147/140473/910083f0/57bd6127N15354d73.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '心理咨询与心理治疗（重排本）'}
+2018-03-31 15:37:47 [CommoditSpider] INFO: result
+2018-03-31 15:37:47 [CommoditSpider] INFO: 1
+2018-03-31 15:37:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:47 [CommoditSpider] INFO: {'itemId': 97744972740875,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t17140/353/532531605/449431/eff4caa5/5a922b31Nd3be1ee6.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '全脑思维开发（套装全12册）'}
+2018-03-31 15:37:48 [CommoditSpider] INFO: result
+2018-03-31 15:37:48 [CommoditSpider] INFO: 1
+2018-03-31 15:37:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:48 [CommoditSpider] INFO: {'itemId': 69839564078324,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t277/5/1706398271/379789/7db04c0e/544082d2Ne9f409bd.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '蔡康永的说话之道（套装共2册）'}
+2018-03-31 15:37:48 [CommoditSpider] INFO: result
+2018-03-31 15:37:48 [CommoditSpider] INFO: 1
+2018-03-31 15:37:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:48 [CommoditSpider] INFO: {'itemId': 96348947042106,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t1699/271/709675770/217576/f6b02c33/55b1a8beNfabcf6c5.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '阿弥陀佛么么哒'}
+2018-03-31 15:37:49 [CommoditSpider] INFO: result
+2018-03-31 15:37:49 [CommoditSpider] INFO: 1
+2018-03-31 15:37:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:49 [CommoditSpider] INFO: {'itemId': 75183581760622,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t15685/13/1330946620/346688/5890d030/5a4f1527N004470d9.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '企鹅萌萌 婴幼儿童互动手工涂色绘本 AR涂色乐园（套装共6册）'}
+2018-03-31 15:37:49 [CommoditSpider] INFO: result
+2018-03-31 15:37:49 [CommoditSpider] INFO: 1
+2018-03-31 15:37:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:49 [CommoditSpider] INFO: {'itemId': 22146578089055,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t9541/115/1090634552/136673/5056c1e5/59dc8af4Naaf75944.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '林汉达中国历史故事集（珍藏版 名家导读有声版）'}
+2018-03-31 15:37:49 [CommoditSpider] INFO: result
+2018-03-31 15:37:49 [CommoditSpider] INFO: 1
+2018-03-31 15:37:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:49 [CommoditSpider] INFO: {'itemId': 64398708495034,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t319/15/589155098/637993/bcbb005f/541a47d9Nb42044be.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '乖，摸摸头'}
+2018-03-31 15:37:50 [CommoditSpider] INFO: result
+2018-03-31 15:37:50 [CommoditSpider] INFO: 1
+2018-03-31 15:37:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:50 [CommoditSpider] INFO: {'itemId': 93240802044677,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t2911/307/1126972720/600110/ed654fae/577624f7Nbf86a2bf.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师 泯灭的灵魂碎片（第17部）'}
+2018-03-31 15:37:50 [CommoditSpider] INFO: result
+2018-03-31 15:37:50 [CommoditSpider] INFO: 1
+2018-03-31 15:37:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:50 [CommoditSpider] INFO: {'itemId': 67373519539467,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t7060/345/1462167358/255112/7c4b4eb8/59818c6eN634bd6f7.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国国家地理百科全书（套装共10册）'}
+2018-03-31 15:37:50 [CommoditSpider] INFO: result
+2018-03-31 15:37:50 [CommoditSpider] INFO: 1
+2018-03-31 15:37:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:50 [CommoditSpider] INFO: {'itemId': 63690608166053,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t13282/305/1438826242/547154/5d600bcd/5a20bb04N28b0873a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '洋洋兔童书·我们的节日：画给孩子的中国传统节日'}
+2018-03-31 15:37:51 [CommoditSpider] INFO: result
+2018-03-31 15:37:51 [CommoditSpider] INFO: 1
+2018-03-31 15:37:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:51 [CommoditSpider] INFO: {'itemId': 1907192817893,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t3235/43/1426302686/269479/249c9d4c/57ccf79aNedd6e655.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '影响力（经典版）（新版）'}
+2018-03-31 15:37:51 [CommoditSpider] INFO: result
+2018-03-31 15:37:51 [CommoditSpider] INFO: 1
+2018-03-31 15:37:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:51 [CommoditSpider] INFO: {'itemId': 15810273766477,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15178/236/2690386277/502775/f551b795/5ab0bc87N05221564.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '深见春夫“睡得香”图画书系列（彩色套装共5册）'}
+2018-03-31 15:37:52 [CommoditSpider] INFO: result
+2018-03-31 15:37:52 [CommoditSpider] INFO: 1
+2018-03-31 15:37:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:52 [CommoditSpider] INFO: {'itemId': 79416171169456,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t3757/38/34269690/485570/3f12bc2/57fc87a3N82181b12.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '现代汉语词典（第7版）'}
+2018-03-31 15:37:52 [CommoditSpider] INFO: result
+2018-03-31 15:37:52 [CommoditSpider] INFO: 1
+2018-03-31 15:37:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:52 [CommoditSpider] INFO: {'itemId': 3471283298395,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t2764/316/1753762047/194541/d0aff889/5747b6daN5add41c2.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '为了你，我愿意热爱整个世界'}
+2018-03-31 15:37:53 [CommoditSpider] INFO: result
+2018-03-31 15:37:53 [CommoditSpider] INFO: 1
+2018-03-31 15:37:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:53 [CommoditSpider] INFO: {'itemId': 39807928524218,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t3388/63/1414069775/251733/d1ded900/5825258aN0b776483.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '幼儿睡前故事绘本(全套60册) 0-3-6岁童话书儿童启蒙认知早教'}
+2018-03-31 15:37:53 [CommoditSpider] INFO: result
+2018-03-31 15:37:53 [CommoditSpider] INFO: 1
+2018-03-31 15:37:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:53 [CommoditSpider] INFO: {'itemId': 27771191469536,
+ 'itemImg': 'http://img14.360buyimg.com/n3/g10/M00/00/17/rBEQWFEA2soIAAAAAAE4yeHX09AAAAJJgA4oUcAATjh341.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '学会提问（原书第10版）'}
+2018-03-31 15:37:54 [CommoditSpider] INFO: result
+2018-03-31 15:37:54 [CommoditSpider] INFO: 1
+2018-03-31 15:37:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:54 [CommoditSpider] INFO: {'itemId': 88889679499281,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2206/103/2670824697/306366/aa91c1bd/5710ba56N69e1a27e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '学前儿童生理启蒙必备：我们的身体（3-6岁）'}
+2018-03-31 15:37:54 [CommoditSpider] INFO: result
+2018-03-31 15:37:54 [CommoditSpider] INFO: 1
+2018-03-31 15:37:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:54 [CommoditSpider] INFO: {'itemId': 13220269852914,
+ 'itemImg': 'http://img12.360buyimg.com/n3/g5/M02/03/02/rBEIDE_X7tcIAAAAAAD99olav70AAAmTwIx9MwAAP4O056.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '偷影子的人（随书附精美卡片）'}
+2018-03-31 15:37:54 [CommoditSpider] INFO: result
+2018-03-31 15:37:54 [CommoditSpider] INFO: 1
+2018-03-31 15:37:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:54 [CommoditSpider] INFO: {'itemId': 28251100577401,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t2845/137/671207220/179213/71fdc9e8/57205794N2700363b.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '幸存者'}
+2018-03-31 15:37:55 [CommoditSpider] INFO: result
+2018-03-31 15:37:55 [CommoditSpider] INFO: 1
+2018-03-31 15:37:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:37:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3190,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/POST': 4,
+ 'downloader/response_bytes': 427975,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 3, 31, 7, 37, 55, 428008),
+ 'item_scraped_count': 80,
+ 'log_count/DEBUG': 85,
+ 'log_count/INFO': 249,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 4,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'splash/render.html/request_count': 4,
+ 'splash/render.html/response_count/200': 4,
+ 'start_time': datetime.datetime(2018, 3, 31, 7, 37, 13, 98647)}
+2018-03-31 15:37:55 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2018-03-31 15:44:33 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: ScrapyCommodit)
+2018-03-31 15:44:33 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'ScrapyCommodit', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'ScrapyCommodit.spiders', 'SPIDER_MODULES': ['ScrapyCommodit.spiders'], 'USER_AGENT': ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)', 'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)', 'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)', 'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0', 'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.11 TaoBrowser/2.0 Safari/536.11', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.71 Safari/537.1 LBBROWSER', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; LBBROWSER)', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E; LBBROWSER)', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E)', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE)', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:16.0) Gecko/20100101 Firefox/16.0', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11', 'Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36']}
+2018-03-31 15:44:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-31 15:44:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ScrapyCommodit.middlewares.SetAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-31 15:44:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'ScrapyCommodit.middlewares.ScrapycommoditSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-31 15:44:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['ScrapyCommodit.pipelines.ScrapycommoditPipeline',
+ 'ScrapyCommodit.pipelines.MysqlPipeline']
+2018-03-31 15:44:34 [scrapy.core.engine] INFO: Spider opened
+2018-03-31 15:44:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-31 15:44:34 [CommoditSpider] INFO: Spider opened: CommoditSpider
+2018-03-31 15:44:34 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-31 15:44:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:44:36 [CommoditSpider] INFO: {'itemId': 63821285188714,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t10885/90/1676944853/291012/8f1f8485/59e5a7efNc8a36761.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '曹文轩纯美小说：草房子（2016版）'}
+2018-03-31 15:44:36 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:36 [CommoditSpider] INFO: {'itemId': 46697199243131,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t13051/98/2098947641/472686/b33c437e/5a40bca7N5a85c922.jpg',
+ 'itemPrice': '¥45.20',
+ 'itemTitle': '2019恋练有词：新东方考研英语词汇识记与应用大全（附赠考研英语高分锦囊）'}
+2018-03-31 15:44:36 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:36 [CommoditSpider] INFO: {'itemId': 87673259823639,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9439/316/1197652185/193711/523c1d6d/59b5f21dNe2b83781.jpg',
+ 'itemPrice': '¥104.50',
+ 'itemTitle': '大冰京东套装：么么哒+摸摸头+好吗好的+我不（套装共4册）'}
+2018-03-31 15:44:37 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:37 [CommoditSpider] INFO: {'itemId': 60615317067878,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t14263/96/2664829027/666391/326adbf2/5aaf7631N0ab39f79.jpg',
+ 'itemPrice': '¥59.60',
+ 'itemTitle': '全球通史 从史前史到21世纪（ 第7版 修订版 中文版 套装上下册）（赠送精美地 ...'}
+2018-03-31 15:44:37 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:37 [CommoditSpider] INFO: {'itemId': 78979769848100,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2686/205/715200570/148688/f9024b22/5721c21eN6aaeecda.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '曹文轩纯美小说：青铜葵花（2016版）'}
+2018-03-31 15:44:37 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:37 [CommoditSpider] INFO: {'itemId': 40798736849466,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t10402/243/1768047745/296939/203b1ba0/59e5a81fN443fc2d6.jpg',
+ 'itemPrice': '¥14.00',
+ 'itemTitle': '曹文轩纯美小说系列：根鸟（2016版）'}
+2018-03-31 15:44:37 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:37 [CommoditSpider] INFO: {'itemId': 52525374814636,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t1540/363/126909555/150883/5f54dc4/555bda38Na32e9ad6.jpg',
+ 'itemPrice': '¥14.90',
+ 'itemTitle': '新版林格伦作品选集 美绘版-长袜子皮皮'}
+2018-03-31 15:44:37 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:37 [CommoditSpider] INFO: {'itemId': 46966656736546,
+ 'itemImg': 'http://img14.360buyimg.com/n3/g8/M03/0C/13/rBEHaFCHfscIAAAAAACmu1u7nIsAACdlABopHoAAKbT099.jpg',
+ 'itemPrice': '¥14.90',
+ 'itemTitle': '一年级大个子二年级小个子（注音版）'}
+2018-03-31 15:44:38 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:38 [CommoditSpider] INFO: {'itemId': 45481258384057,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t5749/151/2155508718/91400/b98f9834/592d2215N0f718a02.jpg',
+ 'itemPrice': '¥31.10',
+ 'itemTitle': '时间简史（插图版）【荐书联盟推荐】'}
+2018-03-31 15:44:38 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:38 [CommoditSpider] INFO: {'itemId': 51109529997354,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t5206/340/403894813/263043/eac9cb12/58ff13cfN59aceeb6.jpg',
+ 'itemPrice': '¥202.50',
+ 'itemTitle': '怪物大师系列（套装1-18册）'}
+2018-03-31 15:44:38 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:38 [CommoditSpider] INFO: {'itemId': 56054450676023,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t6124/187/760955031/570043/ef3f4f4e/592bf16cN9315c9fc.jpg',
+ 'itemPrice': '¥19.90',
+ 'itemTitle': '天才在左疯子在右完整版\u3000[荐书联盟推荐]'}
+2018-03-31 15:44:38 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:38 [CommoditSpider] INFO: {'itemId': 71629238475785,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t8038/54/2343125972/309204/87a64e3e/59cc5804N5369795d.jpg',
+ 'itemPrice': '¥44.90',
+ 'itemTitle': '顾家北手把手教你雅思写作（5.0版）'}
+2018-03-31 15:44:38 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:38 [CommoditSpider] INFO: {'itemId': 33049525356183,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t4975/322/2389951349/211142/e8b1c80d/58fef4fbNe39a7707.jpg',
+ 'itemPrice': '¥17.40',
+ 'itemTitle': '新华字典（双色本 第11版）'}
+2018-03-31 15:44:38 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:38 [CommoditSpider] INFO: {'itemId': 61994167958859,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2233/5/1992778828/453565/eeeaab1d/5695d9c6N66f9239b.jpg',
+ 'itemPrice': '¥18.00',
+ 'itemTitle': '小猪唏哩呼噜（注音版 套装共2册）'}
+2018-03-31 15:44:39 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:39 [CommoditSpider] INFO: {'itemId': 67072179316863,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t2470/299/2541746346/564200/e68c6c42/56e21e4dN8b72a0cb.jpg',
+ 'itemPrice': '¥18.80',
+ 'itemTitle': '窗边的小豆豆（新版）'}
+2018-03-31 15:44:39 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:39 [CommoditSpider] INFO: {'itemId': 48504013865040,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t15667/160/563569281/151713/d4fab374/5a373299N4978d724.jpg',
+ 'itemPrice': '¥63.00',
+ 'itemTitle': '原则'}
+2018-03-31 15:44:39 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:39 [CommoditSpider] INFO: {'itemId': 29440007863006,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t8146/339/2042467772/188002/4f5fbe4a/59c21682N21f7f9d4.jpg',
+ 'itemPrice': '¥35.60',
+ 'itemTitle': '基金从业资格考试教材2018 基金从业资格考试统编教材 证券投资基金（第二版）下 ...'}
+2018-03-31 15:44:39 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:39 [CommoditSpider] INFO: {'itemId': 20347243206654,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t17050/142/107699987/346339/e1d480c6/5a5d6113N236a00ce.jpg',
+ 'itemPrice': '¥36.80',
+ 'itemTitle': '星火英语 英语四级真题试卷 2018年6月全真试题+标准模拟 词汇写作翻译听力阅 ...'}
+2018-03-31 15:44:39 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:39 [CommoditSpider] INFO: {'itemId': 62668291887713,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3082/278/4352368435/211098/425fc11/583e9d23N3884fc71.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '黄蓓佳倾情小说系列：我要做好孩子'}
+2018-03-31 15:44:39 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:39 [CommoditSpider] INFO: {'itemId': 70161300270798,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t17143/194/599958538/284097/e8937639/5a97be9aNdc3a985f.jpg',
+ 'itemPrice': '¥59.80',
+ 'itemTitle': '北斗童书·世界地图：跟爸爸一起去旅行 全新升级（百科知识版 精装绘本）（附赠19 ...'}
+2018-03-31 15:44:40 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:44:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:44:41 [CommoditSpider] INFO: {'itemId': 90522831534769,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t1675/48/1231679166/575556/e9e945d0/55c99f98N774df4d8.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新版中日交流标准日本语初级（第二版 套装上下册 附光盘）'}
+2018-03-31 15:44:41 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:41 [CommoditSpider] INFO: {'itemId': 96150580034765,
+ 'itemImg': 'http://img12.360buyimg.com/n3/g12/M00/00/1A/rBEQYVMqVLUIAAAAAAVy6DthPs8AAC_GQEbUY8ABXMA270.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·十万个为什么（幼儿注音版 套装共8册）'}
+2018-03-31 15:44:42 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:42 [CommoditSpider] INFO: {'itemId': 72032335188767,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2005/16/396566077/381933/1f52e7b4/5604ebd9N4e34149c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '大冰新畅销作品 （套装共2册）'}
+2018-03-31 15:44:42 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:42 [CommoditSpider] INFO: {'itemId': 10800202422787,
+ 'itemImg': 'http://img13.360buyimg.com/n3/g14/M00/0E/00/rBEhVlIkRoYIAAAAAALETwnEaSQAACvGQCSl4IAAsRn847.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '金庸作品集 射雕英雄传（朗声旧版 套装05-08册）'}
+2018-03-31 15:44:42 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:42 [CommoditSpider] INFO: {'itemId': 18213776830591,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t12463/116/483030616/1061244/35facde9/5a0c272eN3bbae778.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '无敌舰队（汗青堂丛书016）'}
+2018-03-31 15:44:42 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:42 [CommoditSpider] INFO: {'itemId': 82079872927814,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t6439/173/953771713/400132/963dc0a0/59479686Nc41d1362.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师19：绝望的圣城囚笼'}
+2018-03-31 15:44:42 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:42 [CommoditSpider] INFO: {'itemId': 11159882413051,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2590/219/2241829193/186594/31443d8c/575e45bfNd1fd1f28.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '浮生六记（汪涵推荐，全译本）'}
+2018-03-31 15:44:43 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:43 [CommoditSpider] INFO: {'itemId': 15984975589327,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t5929/285/1301108041/262087/9a8120c5/5930cadcN81d9efe8.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师·御风者的青色罪印'}
+2018-03-31 15:44:43 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:43 [CommoditSpider] INFO: {'itemId': 45902755536530,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3523/172/1973121135/577623/9778f24f/583d5831Nec5b7c63.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新世纪汉英大词典(第二版)(缩印本)'}
+2018-03-31 15:44:43 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:43 [CommoditSpider] INFO: {'itemId': 17870296242904,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t4414/15/3508854418/162325/e65a2199/58fef4daNeef73399.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新华字典（第11版）（单色本）'}
+2018-03-31 15:44:43 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:43 [CommoditSpider] INFO: {'itemId': 72511346503944,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t6796/251/2399972693/810602/a71b27ac/598bb987N8bc2b687.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '凯迪克金奖绘本系列：火车头+灯船+登月（陆海空三部曲 套装全3册）'}
+2018-03-31 15:44:43 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:43 [CommoditSpider] INFO: {'itemId': 41819537295498,
+ 'itemImg': 'http://img10.360buyimg.com/n3/11439/90dbb13c-65e8-4ac6-b130-375a1d9fcb39.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '大设计\u3000【荐书联盟推荐】'}
+2018-03-31 15:44:43 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:43 [CommoditSpider] INFO: {'itemId': 62364149563205,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t8929/47/1842592084/259072/1ccde922/59c07e13Nb2230e44.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '法医秦明系列：偷窥者+幸存者+清道夫+第十一根手指+无声的证词+尸语者（套装共6 ...'}
+2018-03-31 15:44:44 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:44 [CommoditSpider] INFO: {'itemId': 79405370464717,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t6064/117/754680091/281929/df14e291/592bf168N5c3713a3.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': 'DK万物运转的秘密 给青少年的物理世界入门书'}
+2018-03-31 15:44:44 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:44 [CommoditSpider] INFO: {'itemId': 25765351628593,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t7825/185/2542515982/873019/e2f29eec/59b10d89N9737a999.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·中国地图：跟爸爸一起去旅行（百科知识版）大开本、精装绘本'}
+2018-03-31 15:44:44 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:44 [CommoditSpider] INFO: {'itemId': 44624901894494,
+ 'itemImg': 'http://img11.360buyimg.com/n3/g14/M09/17/18/rBEhVVMhXCAIAAAAAAXAlbaEXfAAAKIXACephYABcCt020.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '朗文·外研社·新概念英语1：英语初阶（新版）'}
+2018-03-31 15:44:44 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:44 [CommoditSpider] INFO: {'itemId': 96254509179395,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t1705/189/702227414/177982/cc8c12f0/55dab54dN5271c377.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国科幻基石丛书·三体（套装1-3册）'}
+2018-03-31 15:44:44 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:44 [CommoditSpider] INFO: {'itemId': 55654825777875,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t4018/197/300113302/828723/82a26eee/5847c42aN921b98e1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·德国经典专注力亲子游戏书 第一辑（套装共3册）'}
+2018-03-31 15:44:45 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:45 [CommoditSpider] INFO: {'itemId': 2415544735539,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t1558/48/132037296/109384/53e24e21/555d8a52N2892aeb0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '果壳中的宇宙·霍金（插图本）'}
+2018-03-31 15:44:45 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:45 [CommoditSpider] INFO: {'itemId': 11680996762255,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t11296/184/2347456633/525456/cde4e6de/5a163339N08b869bf.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '东野圭吾：第十年的情人节'}
+2018-03-31 15:44:45 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:44:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:44:47 [CommoditSpider] INFO: {'itemId': 23130303118678,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t19567/33/927487945/466795/ad256c94/5ab0bc64N004db76a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '深见春夫“想得美”图画书系列（彩色套装共5册）'}
+2018-03-31 15:44:47 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:47 [CommoditSpider] INFO: {'itemId': 11408678142304,
+ 'itemImg': 'http://img11.360buyimg.com/n3/g14/M09/17/18/rBEhVlMhXCAIAAAAAAY0OVe5t3gAAKIXACtMWIABjRR310.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '朗文·外研社·新概念英语2 实践与进步（新版）'}
+2018-03-31 15:44:47 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:47 [CommoditSpider] INFO: {'itemId': 76837594406536,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t532/248/743515818/96545/d04bb39a/54852a0eN6a93227e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '经典电影文学系列：阿甘正传'}
+2018-03-31 15:44:47 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:47 [CommoditSpider] INFO: {'itemId': 75493936461827,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t4438/162/2502286270/541442/9346416d/58f08828N5824068a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '于丹 论语 心得'}
+2018-03-31 15:44:47 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:47 [CommoditSpider] INFO: {'itemId': 78202048518338,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t13852/67/197568506/65137/2e9df40a/5a0566d8N7b05155d.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '习近平谈治国理政 第二卷（中文平装）'}
+2018-03-31 15:44:47 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:47 [CommoditSpider] INFO: {'itemId': 61150006052430,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t6061/81/730791368/329364/8277302b/592bf164N2c6d2b50.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国科幻基石丛书·三体（1）/中国科幻银河奖特别获奖作品'}
+2018-03-31 15:44:48 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:48 [CommoditSpider] INFO: {'itemId': 48430876674432,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t16534/222/2084168776/1001103/357100ed/5a77ca78Nf9e169be.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '解忧杂货店'}
+2018-03-31 15:44:48 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:48 [CommoditSpider] INFO: {'itemId': 8404468508475,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t1441/343/143276299/84794/e0510e1c/555d8305N5bb5c1f0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '武志红心灵暖愈系列：身体知道答案+为何爱会伤人（套装共2册）'}
+2018-03-31 15:44:48 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:48 [CommoditSpider] INFO: {'itemId': 64277343103600,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t958/13/725695028/138506/2afbee22/5540b1b8Ndd8fb049.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '女生贾梅全传'}
+2018-03-31 15:44:48 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:48 [CommoditSpider] INFO: {'itemId': 60632314347061,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2491/209/1396000181/372051/7ca40f9b/569c7aefNd5fb189c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '千面英雄（精装）'}
+2018-03-31 15:44:48 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:48 [CommoditSpider] INFO: {'itemId': 18032081814119,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t15271/120/1933374026/262921/db9dc0a9/5a615355Nae3d1b0c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '杨红樱笑猫日记：又见小可怜'}
+2018-03-31 15:44:49 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:49 [CommoditSpider] INFO: {'itemId': 34969968634602,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t16987/300/507543982/703124/ef4facb8/5a8fc1f2N2391bedd.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '淘气包马小跳漫画升级版（第一辑套装全十册）'}
+2018-03-31 15:44:49 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:49 [CommoditSpider] INFO: {'itemId': 5384556781145,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2737/328/1405538066/202534/aab816bf/573d821aN9de83d79.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '自在独行：贾平凹的独行世界（陈坤推荐）'}
+2018-03-31 15:44:49 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:49 [CommoditSpider] INFO: {'itemId': 98742652552720,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15580/128/2125230371/346649/92ccf62a/5a9236f1N531218cc.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '智力大挑战幼儿专注力培养（套装共12册）'}
+2018-03-31 15:44:49 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:49 [CommoditSpider] INFO: {'itemId': 74395124962167,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15031/194/2294576543/298875/b2fb67a8/5a93c36fN0647eda2.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '环球国家地理百科全书（套装共10册）'}
+2018-03-31 15:44:49 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:49 [CommoditSpider] INFO: {'itemId': 10985030803121,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t5707/335/77395073/785561/914b78d3/59155836N41b2fe0e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': 'DK机械运转的秘密 动物园大逃亡！（精装版 全彩）'}
+2018-03-31 15:44:49 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:49 [CommoditSpider] INFO: {'itemId': 49350650141318,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15808/118/1462179270/345203/9b9b8123/5a52f0deN68e015f1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '父与子全集（套装共10册）'}
+2018-03-31 15:44:50 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:50 [CommoditSpider] INFO: {'itemId': 55699585735559,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15301/196/2243879978/988202/98e92885/5a961443Nfaad5dff.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '伤心咖啡馆之歌（奥巴马送给两个女儿的礼物，孤独小说家麦卡勒斯的口碑神作）作家榜出 ...'}
+2018-03-31 15:44:50 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:50 [CommoditSpider] INFO: {'itemId': 58479991880777,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2059/279/549453706/121202/250d8bb0/56163c4cN0fb30ab1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '樱桃园·杨红樱注音童书 升级版：亲爱的笨笨猪（注音版）'}
+2018-03-31 15:44:50 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:50 [CommoditSpider] INFO: {'itemId': 93699095096865,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t17827/172/93304178/346468/ac876f70/5a5d6113Ne7e2fe25.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '星火英语 英语六级真题试卷 2018年6月全真试题+标准模拟 词汇写作翻译听力阅 ...'}
+2018-03-31 15:44:50 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:44:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:44:52 [CommoditSpider] INFO: {'itemId': 6696889576348,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9160/276/1950634648/369277/eea5bd4f/59c1fd19Neeadc6d0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '我不 大冰2017新书'}
+2018-03-31 15:44:52 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:52 [CommoditSpider] INFO: {'itemId': 3213171833900,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t3283/110/726802147/140473/910083f0/57bd6127N15354d73.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '心理咨询与心理治疗（重排本）'}
+2018-03-31 15:44:52 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:52 [CommoditSpider] INFO: {'itemId': 39659204774217,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t17140/353/532531605/449431/eff4caa5/5a922b31Nd3be1ee6.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '全脑思维开发（套装全12册）'}
+2018-03-31 15:44:53 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:53 [CommoditSpider] INFO: {'itemId': 30758453798795,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t277/5/1706398271/379789/7db04c0e/544082d2Ne9f409bd.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '蔡康永的说话之道（套装共2册）'}
+2018-03-31 15:44:53 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:53 [CommoditSpider] INFO: {'itemId': 71016973870335,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t1699/271/709675770/217576/f6b02c33/55b1a8beNfabcf6c5.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '阿弥陀佛么么哒'}
+2018-03-31 15:44:53 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:53 [CommoditSpider] INFO: {'itemId': 13472149690452,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15685/13/1330946620/346688/5890d030/5a4f1527N004470d9.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '企鹅萌萌 婴幼儿童互动手工涂色绘本 AR涂色乐园（套装共6册）'}
+2018-03-31 15:44:53 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:53 [CommoditSpider] INFO: {'itemId': 24088749103312,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9541/115/1090634552/136673/5056c1e5/59dc8af4Naaf75944.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '林汉达中国历史故事集（珍藏版 名家导读有声版）'}
+2018-03-31 15:44:53 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:53 [CommoditSpider] INFO: {'itemId': 62482654472473,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t319/15/589155098/637993/bcbb005f/541a47d9Nb42044be.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '乖，摸摸头'}
+2018-03-31 15:44:53 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:53 [CommoditSpider] INFO: {'itemId': 85302290113921,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2911/307/1126972720/600110/ed654fae/577624f7Nbf86a2bf.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师 泯灭的灵魂碎片（第17部）'}
+2018-03-31 15:44:54 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:54 [CommoditSpider] INFO: {'itemId': 66346400609192,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t7060/345/1462167358/255112/7c4b4eb8/59818c6eN634bd6f7.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国国家地理百科全书（套装共10册）'}
+2018-03-31 15:44:54 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:54 [CommoditSpider] INFO: {'itemId': 50419024285916,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t13282/305/1438826242/547154/5d600bcd/5a20bb04N28b0873a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '洋洋兔童书·我们的节日：画给孩子的中国传统节日'}
+2018-03-31 15:44:54 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:54 [CommoditSpider] INFO: {'itemId': 52129506043001,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3235/43/1426302686/269479/249c9d4c/57ccf79aNedd6e655.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '影响力（经典版）（新版）'}
+2018-03-31 15:44:54 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:54 [CommoditSpider] INFO: {'itemId': 49973426551541,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15178/236/2690386277/502775/f551b795/5ab0bc87N05221564.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '深见春夫“睡得香”图画书系列（彩色套装共5册）'}
+2018-03-31 15:44:54 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:54 [CommoditSpider] INFO: {'itemId': 90760895169237,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t3757/38/34269690/485570/3f12bc2/57fc87a3N82181b12.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '现代汉语词典（第7版）'}
+2018-03-31 15:44:55 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:55 [CommoditSpider] INFO: {'itemId': 57824382700052,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2764/316/1753762047/194541/d0aff889/5747b6daN5add41c2.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '为了你，我愿意热爱整个世界'}
+2018-03-31 15:44:55 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:55 [CommoditSpider] INFO: {'itemId': 2398928950210,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3388/63/1414069775/251733/d1ded900/5825258aN0b776483.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '幼儿睡前故事绘本(全套60册) 0-3-6岁童话书儿童启蒙认知早教'}
+2018-03-31 15:44:55 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:55 [CommoditSpider] INFO: {'itemId': 3568670576625,
+ 'itemImg': 'http://img12.360buyimg.com/n3/g10/M00/00/17/rBEQWFEA2soIAAAAAAE4yeHX09AAAAJJgA4oUcAATjh341.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '学会提问（原书第10版）'}
+2018-03-31 15:44:55 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:55 [CommoditSpider] INFO: {'itemId': 54132224081838,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2206/103/2670824697/306366/aa91c1bd/5710ba56N69e1a27e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '学前儿童生理启蒙必备：我们的身体（3-6岁）'}
+2018-03-31 15:44:55 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:55 [CommoditSpider] INFO: {'itemId': 99914860864900,
+ 'itemImg': 'http://img14.360buyimg.com/n3/g5/M02/03/02/rBEIDE_X7tcIAAAAAAD99olav70AAAmTwIx9MwAAP4O056.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '偷影子的人（随书附精美卡片）'}
+2018-03-31 15:44:55 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:55 [CommoditSpider] INFO: {'itemId': 88431343354666,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2845/137/671207220/179213/71fdc9e8/57205794N2700363b.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '幸存者'}
+2018-03-31 15:44:56 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:44:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:44:57 [CommoditSpider] INFO: {'itemId': 81550203630231,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t3796/307/2114382153/274712/cbf9aa64/5840ecb0N8be4af6d.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '长安十二时辰（上下共两册）'}
+2018-03-31 15:44:58 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:58 [CommoditSpider] INFO: {'itemId': 18502398594635,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t7936/164/369550961/520314/816eda15/59924963N9e9d0512.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '习近平的七年知青岁月'}
+2018-03-31 15:44:58 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:58 [CommoditSpider] INFO: {'itemId': 63746373815089,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t14452/33/143579569/195775/a15c3bc1/5a24e220N4f79e319.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '邦臣小红花·我的第一套启蒙认知贴纸书（2-5岁 套装全8册）'}
+2018-03-31 15:44:58 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:58 [CommoditSpider] INFO: {'itemId': 16918772685268,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t15460/222/1923663561/397528/a1b40c9c/5a5f0312N1d683d83.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新东方 四级词汇词根+联想记忆法'}
+2018-03-31 15:44:58 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:58 [CommoditSpider] INFO: {'itemId': 34154058000882,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t11824/344/70950795/204778/f8cc11b6/59e71e10Nc2b1d800.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '皮囊'}
+2018-03-31 15:44:58 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:58 [CommoditSpider] INFO: {'itemId': 72890451706311,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t5710/201/1974163722/97953/e1b3b3bf/592bf168Nfc31456e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '习近平用典（平装版）'}
+2018-03-31 15:44:58 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:58 [CommoditSpider] INFO: {'itemId': 91998977556400,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t5893/196/8468838121/278266/e24b82ca/597b166bNed21644a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '偷窥者'}
+2018-03-31 15:44:59 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:59 [CommoditSpider] INFO: {'itemId': 37387954380289,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t15775/281/1782971544/189632/51186f02/5a5e209bNa09fc270.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '红宝书 (2019）考研英语词汇（必考词+基础词+超纲词）套装共5册'}
+2018-03-31 15:44:59 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:59 [CommoditSpider] INFO: {'itemId': 34705128127602,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t9562/177/1395170810/144534/e61e23f/59e02012N10cdfd8c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '自控力 斯坦福大学广受欢迎心理学课程（新版）'}
+2018-03-31 15:44:59 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:59 [CommoditSpider] INFO: {'itemId': 29492589846028,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t6049/120/736560958/623328/bd96290/592bf166Nd9fc488e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '西方经济学 微观部分（第六版）'}
+2018-03-31 15:44:59 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:59 [CommoditSpider] INFO: {'itemId': 74171295772628,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t16273/188/2376961810/152226/a3ce9817/5ab8ae1bN5bc7e6e3.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '自卑与超越（完整全译本）'}
+2018-03-31 15:44:59 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:59 [CommoditSpider] INFO: {'itemId': 59078261146510,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t14404/91/586858957/350390/17e9e659/5a31f63bN8719e80b.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '月亮与六便士（2017新版！未删节插图珍藏本）（作家榜经典）'}
+2018-03-31 15:44:59 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:44:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:44:59 [CommoditSpider] INFO: {'itemId': 49072441956910,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t17581/45/487828828/499729/2bb5a742/5a813fe7N42717af5.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '正面管教（修订版）'}
+2018-03-31 15:45:00 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:00 [CommoditSpider] INFO: {'itemId': 891698835694,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9847/320/10332756/188762/a8800e0e/59c365d3N024542af.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '基金从业资格考试教材2018 基金从业资格考试统编教材 证券投资基金（第二版）上 ...'}
+2018-03-31 15:45:00 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:00 [CommoditSpider] INFO: {'itemId': 36304426223736,
+ 'itemImg': 'http://img11.360buyimg.com/n3/g14/M07/03/0F/rBEhVVHRG-8IAAAAAAhQzZZ529kAAArdAAuQ3YACFDl719.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '这个历史挺靠谱 袁腾飞讲历史（套装全3册 附光盘）'}
+2018-03-31 15:45:00 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:00 [CommoditSpider] INFO: {'itemId': 59586809592080,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t2833/360/2356290198/499895/543de4d6/5760b6c5N8537e3b0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '米小圈漫画成语（套装共4册）'}
+2018-03-31 15:45:00 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:00 [CommoditSpider] INFO: {'itemId': 3888548728637,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t11374/244/539069943/467939/489eb7f1/59f2d817Ncfe21fba.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新东方 词以类记：TOEFL iBT词汇'}
+2018-03-31 15:45:00 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:00 [CommoditSpider] INFO: {'itemId': 88983248249589,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2695/77/2375961305/246108/808e745b/57624115N6f52cdf4.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '金字塔原理：思考、表达和解决问题的逻辑'}
+2018-03-31 15:45:00 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:00 [CommoditSpider] INFO: {'itemId': 84349546956776,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t18544/332/367087753/159743/23b41373/5a70191cN636d7610.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '西方经济学（宏观部分·第七版）（21世纪经济学系列教材；普通高等教育“十一五”国 ...'}
+2018-03-31 15:45:01 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:01 [CommoditSpider] INFO: {'itemId': 87553298975524,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t14932/148/2589999247/489374/beb5f199/5aa9d3d6Ne9d88ec0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '斯蒂芬·霍金传：一个伟大物理学家的生命传奇'}
+2018-03-31 15:45:01 [CommoditSpider] ERROR: (1146, "Table 'commodititem.item' doesn't exist")
+2018-03-31 15:45:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:45:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-31 15:45:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/POST': 5,
+ 'downloader/response_bytes': 536747,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 31, 7, 45, 1, 495223),
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 106,
+ 'log_count/ERROR': 100,
+ 'log_count/INFO': 108,
+ 'offsite/filtered': 1,
+ 'request_depth_max': 5,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'splash/render.html/request_count': 5,
+ 'splash/render.html/response_count/200': 5,
+ 'start_time': datetime.datetime(2018, 3, 31, 7, 44, 34, 742241)}
+2018-03-31 15:45:01 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-31 15:45:41 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: ScrapyCommodit)
+2018-03-31 15:45:41 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'ScrapyCommodit', 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'ScrapyCommodit.spiders', 'SPIDER_MODULES': ['ScrapyCommodit.spiders'], 'USER_AGENT': ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)', 'Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)', 'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)', 'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0', 'Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.11 TaoBrowser/2.0 Safari/536.11', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.71 Safari/537.1 LBBROWSER', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; LBBROWSER)', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E; LBBROWSER)', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.84 Safari/535.11 LBBROWSER', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; QQBrowser/7.0.3698.400)', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 732; .NET4.0C; .NET4.0E)', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; SV1; QQDownload 732; .NET4.0C; .NET4.0E; 360SE)', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:16.0) Gecko/20100101 Firefox/16.0', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11', 'Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36']}
+2018-03-31 15:45:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-31 15:45:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ScrapyCommodit.middlewares.SetAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-31 15:45:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'ScrapyCommodit.middlewares.ScrapycommoditSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-31 15:45:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['ScrapyCommodit.pipelines.ScrapycommoditPipeline',
+ 'ScrapyCommodit.pipelines.MysqlPipeline']
+2018-03-31 15:45:42 [scrapy.core.engine] INFO: Spider opened
+2018-03-31 15:45:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-31 15:45:42 [CommoditSpider] INFO: Spider opened: CommoditSpider
+2018-03-31 15:45:42 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-31 15:45:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:45:44 [CommoditSpider] INFO: {'itemId': 29403422365400,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t10885/90/1676944853/291012/8f1f8485/59e5a7efNc8a36761.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '曹文轩纯美小说：草房子（2016版）'}
+2018-03-31 15:45:45 [py.warnings] WARNING: c:\python36\lib\site-packages\pymysql\cursors.py:165: Warning: (1265, "Data truncated for column 'itemImg' at row 1")
+  result = self._query(query)
+
+2018-03-31 15:45:45 [CommoditSpider] INFO: result
+2018-03-31 15:45:45 [CommoditSpider] INFO: 1
+2018-03-31 15:45:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:45 [CommoditSpider] INFO: {'itemId': 93445360036259,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t13051/98/2098947641/472686/b33c437e/5a40bca7N5a85c922.jpg',
+ 'itemPrice': '¥45.20',
+ 'itemTitle': '2019恋练有词：新东方考研英语词汇识记与应用大全（附赠考研英语高分锦囊）'}
+2018-03-31 15:45:45 [CommoditSpider] INFO: result
+2018-03-31 15:45:45 [CommoditSpider] INFO: 1
+2018-03-31 15:45:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:45 [CommoditSpider] INFO: {'itemId': 73380070230644,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9439/316/1197652185/193711/523c1d6d/59b5f21dNe2b83781.jpg',
+ 'itemPrice': '¥104.50',
+ 'itemTitle': '大冰京东套装：么么哒+摸摸头+好吗好的+我不（套装共4册）'}
+2018-03-31 15:45:45 [CommoditSpider] INFO: result
+2018-03-31 15:45:45 [CommoditSpider] INFO: 1
+2018-03-31 15:45:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:45 [CommoditSpider] INFO: {'itemId': 24528711211731,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t14263/96/2664829027/666391/326adbf2/5aaf7631N0ab39f79.jpg',
+ 'itemPrice': '¥59.60',
+ 'itemTitle': '全球通史 从史前史到21世纪（ 第7版 修订版 中文版 套装上下册）（赠送精美地 ...'}
+2018-03-31 15:45:46 [CommoditSpider] INFO: result
+2018-03-31 15:45:46 [CommoditSpider] INFO: 1
+2018-03-31 15:45:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:46 [CommoditSpider] INFO: {'itemId': 35081747336019,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2686/205/715200570/148688/f9024b22/5721c21eN6aaeecda.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '曹文轩纯美小说：青铜葵花（2016版）'}
+2018-03-31 15:45:46 [CommoditSpider] INFO: result
+2018-03-31 15:45:46 [CommoditSpider] INFO: 1
+2018-03-31 15:45:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:46 [CommoditSpider] INFO: {'itemId': 83105199478278,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t10402/243/1768047745/296939/203b1ba0/59e5a81fN443fc2d6.jpg',
+ 'itemPrice': '¥14.00',
+ 'itemTitle': '曹文轩纯美小说系列：根鸟（2016版）'}
+2018-03-31 15:45:47 [CommoditSpider] INFO: result
+2018-03-31 15:45:47 [CommoditSpider] INFO: 1
+2018-03-31 15:45:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:47 [CommoditSpider] INFO: {'itemId': 79576689834329,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t1540/363/126909555/150883/5f54dc4/555bda38Na32e9ad6.jpg',
+ 'itemPrice': '¥14.90',
+ 'itemTitle': '新版林格伦作品选集 美绘版-长袜子皮皮'}
+2018-03-31 15:45:47 [CommoditSpider] INFO: result
+2018-03-31 15:45:47 [CommoditSpider] INFO: 1
+2018-03-31 15:45:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:47 [CommoditSpider] INFO: {'itemId': 89434590917172,
+ 'itemImg': 'http://img14.360buyimg.com/n3/g8/M03/0C/13/rBEHaFCHfscIAAAAAACmu1u7nIsAACdlABopHoAAKbT099.jpg',
+ 'itemPrice': '¥14.90',
+ 'itemTitle': '一年级大个子二年级小个子（注音版）'}
+2018-03-31 15:45:47 [CommoditSpider] INFO: result
+2018-03-31 15:45:47 [CommoditSpider] INFO: 1
+2018-03-31 15:45:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:47 [CommoditSpider] INFO: {'itemId': 53771739690202,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t5749/151/2155508718/91400/b98f9834/592d2215N0f718a02.jpg',
+ 'itemPrice': '¥31.10',
+ 'itemTitle': '时间简史（插图版）【荐书联盟推荐】'}
+2018-03-31 15:45:48 [CommoditSpider] INFO: result
+2018-03-31 15:45:48 [CommoditSpider] INFO: 1
+2018-03-31 15:45:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:48 [CommoditSpider] INFO: {'itemId': 52024758661965,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t5206/340/403894813/263043/eac9cb12/58ff13cfN59aceeb6.jpg',
+ 'itemPrice': '¥202.50',
+ 'itemTitle': '怪物大师系列（套装1-18册）'}
+2018-03-31 15:45:48 [CommoditSpider] INFO: result
+2018-03-31 15:45:48 [CommoditSpider] INFO: 1
+2018-03-31 15:45:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:48 [CommoditSpider] INFO: {'itemId': 9923546936486,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t6124/187/760955031/570043/ef3f4f4e/592bf16cN9315c9fc.jpg',
+ 'itemPrice': '¥19.90',
+ 'itemTitle': '天才在左疯子在右完整版\u3000[荐书联盟推荐]'}
+2018-03-31 15:45:48 [CommoditSpider] INFO: result
+2018-03-31 15:45:48 [CommoditSpider] INFO: 1
+2018-03-31 15:45:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:48 [CommoditSpider] INFO: {'itemId': 5202590590684,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t8038/54/2343125972/309204/87a64e3e/59cc5804N5369795d.jpg',
+ 'itemPrice': '¥44.90',
+ 'itemTitle': '顾家北手把手教你雅思写作（5.0版）'}
+2018-03-31 15:45:49 [CommoditSpider] INFO: result
+2018-03-31 15:45:49 [CommoditSpider] INFO: 1
+2018-03-31 15:45:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:49 [CommoditSpider] INFO: {'itemId': 73370569213609,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t4975/322/2389951349/211142/e8b1c80d/58fef4fbNe39a7707.jpg',
+ 'itemPrice': '¥17.40',
+ 'itemTitle': '新华字典（双色本 第11版）'}
+2018-03-31 15:45:49 [CommoditSpider] INFO: result
+2018-03-31 15:45:49 [CommoditSpider] INFO: 1
+2018-03-31 15:45:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:49 [CommoditSpider] INFO: {'itemId': 25854966449992,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2233/5/1992778828/453565/eeeaab1d/5695d9c6N66f9239b.jpg',
+ 'itemPrice': '¥18.00',
+ 'itemTitle': '小猪唏哩呼噜（注音版 套装共2册）'}
+2018-03-31 15:45:50 [CommoditSpider] INFO: result
+2018-03-31 15:45:50 [CommoditSpider] INFO: 1
+2018-03-31 15:45:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:50 [CommoditSpider] INFO: {'itemId': 21517609010136,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t2470/299/2541746346/564200/e68c6c42/56e21e4dN8b72a0cb.jpg',
+ 'itemPrice': '¥18.80',
+ 'itemTitle': '窗边的小豆豆（新版）'}
+2018-03-31 15:45:50 [CommoditSpider] INFO: result
+2018-03-31 15:45:50 [CommoditSpider] INFO: 1
+2018-03-31 15:45:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:50 [CommoditSpider] INFO: {'itemId': 6358464864805,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t15667/160/563569281/151713/d4fab374/5a373299N4978d724.jpg',
+ 'itemPrice': '¥63.00',
+ 'itemTitle': '原则'}
+2018-03-31 15:45:50 [CommoditSpider] INFO: result
+2018-03-31 15:45:50 [CommoditSpider] INFO: 1
+2018-03-31 15:45:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:50 [CommoditSpider] INFO: {'itemId': 97684342480316,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t8146/339/2042467772/188002/4f5fbe4a/59c21682N21f7f9d4.jpg',
+ 'itemPrice': '¥35.60',
+ 'itemTitle': '基金从业资格考试教材2018 基金从业资格考试统编教材 证券投资基金（第二版）下 ...'}
+2018-03-31 15:45:51 [CommoditSpider] INFO: result
+2018-03-31 15:45:51 [CommoditSpider] INFO: 1
+2018-03-31 15:45:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:51 [CommoditSpider] INFO: {'itemId': 87474221329495,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t17050/142/107699987/346339/e1d480c6/5a5d6113N236a00ce.jpg',
+ 'itemPrice': '¥36.80',
+ 'itemTitle': '星火英语 英语四级真题试卷 2018年6月全真试题+标准模拟 词汇写作翻译听力阅 ...'}
+2018-03-31 15:45:51 [CommoditSpider] INFO: result
+2018-03-31 15:45:51 [CommoditSpider] INFO: 1
+2018-03-31 15:45:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:51 [CommoditSpider] INFO: {'itemId': 14211741550838,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3082/278/4352368435/211098/425fc11/583e9d23N3884fc71.jpg',
+ 'itemPrice': '¥17.20',
+ 'itemTitle': '黄蓓佳倾情小说系列：我要做好孩子'}
+2018-03-31 15:45:51 [CommoditSpider] INFO: result
+2018-03-31 15:45:51 [CommoditSpider] INFO: 1
+2018-03-31 15:45:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:51 [CommoditSpider] INFO: {'itemId': 79246345314453,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t17143/194/599958538/284097/e8937639/5a97be9aNdc3a985f.jpg',
+ 'itemPrice': '¥59.80',
+ 'itemTitle': '北斗童书·世界地图：跟爸爸一起去旅行 全新升级（百科知识版 精装绘本）（附赠19 ...'}
+2018-03-31 15:45:52 [CommoditSpider] INFO: result
+2018-03-31 15:45:52 [CommoditSpider] INFO: 1
+2018-03-31 15:45:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/0-0-0.html?category=1713-0-0-0-10001-1#comfort>
+None
+2018-03-31 15:45:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:45:53 [CommoditSpider] INFO: {'itemId': 11152653914018,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t1675/48/1231679166/575556/e9e945d0/55c99f98N774df4d8.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新版中日交流标准日本语初级（第二版 套装上下册 附光盘）'}
+2018-03-31 15:45:54 [CommoditSpider] INFO: result
+2018-03-31 15:45:54 [CommoditSpider] INFO: 1
+2018-03-31 15:45:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:54 [CommoditSpider] INFO: {'itemId': 84758020004720,
+ 'itemImg': 'http://img12.360buyimg.com/n3/g12/M00/00/1A/rBEQYVMqVLUIAAAAAAVy6DthPs8AAC_GQEbUY8ABXMA270.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·十万个为什么（幼儿注音版 套装共8册）'}
+2018-03-31 15:45:54 [CommoditSpider] INFO: result
+2018-03-31 15:45:54 [CommoditSpider] INFO: 1
+2018-03-31 15:45:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:54 [CommoditSpider] INFO: {'itemId': 10184506614333,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2005/16/396566077/381933/1f52e7b4/5604ebd9N4e34149c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '大冰新畅销作品 （套装共2册）'}
+2018-03-31 15:45:54 [CommoditSpider] INFO: result
+2018-03-31 15:45:54 [CommoditSpider] INFO: 1
+2018-03-31 15:45:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:54 [CommoditSpider] INFO: {'itemId': 17688019937801,
+ 'itemImg': 'http://img13.360buyimg.com/n3/g14/M00/0E/00/rBEhVlIkRoYIAAAAAALETwnEaSQAACvGQCSl4IAAsRn847.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '金庸作品集 射雕英雄传（朗声旧版 套装05-08册）'}
+2018-03-31 15:45:55 [CommoditSpider] INFO: result
+2018-03-31 15:45:55 [CommoditSpider] INFO: 1
+2018-03-31 15:45:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:55 [CommoditSpider] INFO: {'itemId': 95158825710357,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t12463/116/483030616/1061244/35facde9/5a0c272eN3bbae778.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '无敌舰队（汗青堂丛书016）'}
+2018-03-31 15:45:55 [CommoditSpider] INFO: result
+2018-03-31 15:45:55 [CommoditSpider] INFO: 1
+2018-03-31 15:45:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:55 [CommoditSpider] INFO: {'itemId': 10810934476205,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t6439/173/953771713/400132/963dc0a0/59479686Nc41d1362.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师19：绝望的圣城囚笼'}
+2018-03-31 15:45:56 [CommoditSpider] INFO: result
+2018-03-31 15:45:56 [CommoditSpider] INFO: 1
+2018-03-31 15:45:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:56 [CommoditSpider] INFO: {'itemId': 30997099246661,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2590/219/2241829193/186594/31443d8c/575e45bfNd1fd1f28.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '浮生六记（汪涵推荐，全译本）'}
+2018-03-31 15:45:56 [CommoditSpider] INFO: result
+2018-03-31 15:45:56 [CommoditSpider] INFO: 1
+2018-03-31 15:45:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:56 [CommoditSpider] INFO: {'itemId': 76586068574879,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t5929/285/1301108041/262087/9a8120c5/5930cadcN81d9efe8.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师·御风者的青色罪印'}
+2018-03-31 15:45:57 [CommoditSpider] INFO: result
+2018-03-31 15:45:57 [CommoditSpider] INFO: 1
+2018-03-31 15:45:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:57 [CommoditSpider] INFO: {'itemId': 85352558633890,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3523/172/1973121135/577623/9778f24f/583d5831Nec5b7c63.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新世纪汉英大词典(第二版)(缩印本)'}
+2018-03-31 15:45:57 [CommoditSpider] INFO: result
+2018-03-31 15:45:57 [CommoditSpider] INFO: 1
+2018-03-31 15:45:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:57 [CommoditSpider] INFO: {'itemId': 48128334083804,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t4414/15/3508854418/162325/e65a2199/58fef4daNeef73399.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新华字典（第11版）（单色本）'}
+2018-03-31 15:45:57 [CommoditSpider] INFO: result
+2018-03-31 15:45:57 [CommoditSpider] INFO: 1
+2018-03-31 15:45:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:57 [CommoditSpider] INFO: {'itemId': 55051180253687,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t6796/251/2399972693/810602/a71b27ac/598bb987N8bc2b687.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '凯迪克金奖绘本系列：火车头+灯船+登月（陆海空三部曲 套装全3册）'}
+2018-03-31 15:45:58 [CommoditSpider] INFO: result
+2018-03-31 15:45:58 [CommoditSpider] INFO: 1
+2018-03-31 15:45:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:58 [CommoditSpider] INFO: {'itemId': 42942909865988,
+ 'itemImg': 'http://img10.360buyimg.com/n3/11439/90dbb13c-65e8-4ac6-b130-375a1d9fcb39.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '大设计\u3000【荐书联盟推荐】'}
+2018-03-31 15:45:58 [CommoditSpider] INFO: result
+2018-03-31 15:45:58 [CommoditSpider] INFO: 1
+2018-03-31 15:45:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:58 [CommoditSpider] INFO: {'itemId': 93581269063669,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t8929/47/1842592084/259072/1ccde922/59c07e13Nb2230e44.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '法医秦明系列：偷窥者+幸存者+清道夫+第十一根手指+无声的证词+尸语者（套装共6 ...'}
+2018-03-31 15:45:58 [CommoditSpider] INFO: result
+2018-03-31 15:45:58 [CommoditSpider] INFO: 1
+2018-03-31 15:45:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:58 [CommoditSpider] INFO: {'itemId': 99017006424441,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t6064/117/754680091/281929/df14e291/592bf168N5c3713a3.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': 'DK万物运转的秘密 给青少年的物理世界入门书'}
+2018-03-31 15:45:59 [CommoditSpider] INFO: result
+2018-03-31 15:45:59 [CommoditSpider] INFO: 1
+2018-03-31 15:45:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:59 [CommoditSpider] INFO: {'itemId': 90664501380741,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t7825/185/2542515982/873019/e2f29eec/59b10d89N9737a999.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·中国地图：跟爸爸一起去旅行（百科知识版）大开本、精装绘本'}
+2018-03-31 15:45:59 [CommoditSpider] INFO: result
+2018-03-31 15:45:59 [CommoditSpider] INFO: 1
+2018-03-31 15:45:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:45:59 [CommoditSpider] INFO: {'itemId': 79700899914126,
+ 'itemImg': 'http://img11.360buyimg.com/n3/g14/M09/17/18/rBEhVVMhXCAIAAAAAAXAlbaEXfAAAKIXACephYABcCt020.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '朗文·外研社·新概念英语1：英语初阶（新版）'}
+2018-03-31 15:46:00 [CommoditSpider] INFO: result
+2018-03-31 15:46:00 [CommoditSpider] INFO: 1
+2018-03-31 15:46:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:46:00 [CommoditSpider] INFO: {'itemId': 72415000237031,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t1705/189/702227414/177982/cc8c12f0/55dab54dN5271c377.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国科幻基石丛书·三体（套装1-3册）'}
+2018-03-31 15:46:00 [CommoditSpider] INFO: result
+2018-03-31 15:46:00 [CommoditSpider] INFO: 1
+2018-03-31 15:46:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:46:00 [CommoditSpider] INFO: {'itemId': 65115653192610,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t4018/197/300113302/828723/82a26eee/5847c42aN921b98e1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '北斗童书·德国经典专注力亲子游戏书 第一辑（套装共3册）'}
+2018-03-31 15:46:00 [CommoditSpider] INFO: result
+2018-03-31 15:46:00 [CommoditSpider] INFO: 1
+2018-03-31 15:46:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:46:00 [CommoditSpider] INFO: {'itemId': 80382035403459,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t1558/48/132037296/109384/53e24e21/555d8a52N2892aeb0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '果壳中的宇宙·霍金（插图本）'}
+2018-03-31 15:46:01 [CommoditSpider] INFO: result
+2018-03-31 15:46:01 [CommoditSpider] INFO: 1
+2018-03-31 15:46:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:46:01 [CommoditSpider] INFO: {'itemId': 48092970374840,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t11296/184/2347456633/525456/cde4e6de/5a163339N08b869bf.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '东野圭吾：第十年的情人节'}
+2018-03-31 15:46:01 [CommoditSpider] INFO: result
+2018-03-31 15:46:01 [CommoditSpider] INFO: 1
+2018-03-31 15:46:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-2.html#comfort>
+None
+2018-03-31 15:46:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:46:03 [CommoditSpider] INFO: {'itemId': 36440412864435,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t19567/33/927487945/466795/ad256c94/5ab0bc64N004db76a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '深见春夫“想得美”图画书系列（彩色套装共5册）'}
+2018-03-31 15:46:03 [CommoditSpider] INFO: result
+2018-03-31 15:46:03 [CommoditSpider] INFO: 1
+2018-03-31 15:46:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:03 [CommoditSpider] INFO: {'itemId': 51708405192124,
+ 'itemImg': 'http://img11.360buyimg.com/n3/g14/M09/17/18/rBEhVlMhXCAIAAAAAAY0OVe5t3gAAKIXACtMWIABjRR310.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '朗文·外研社·新概念英语2 实践与进步（新版）'}
+2018-03-31 15:46:03 [CommoditSpider] INFO: result
+2018-03-31 15:46:03 [CommoditSpider] INFO: 1
+2018-03-31 15:46:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:03 [CommoditSpider] INFO: {'itemId': 78830944807181,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t532/248/743515818/96545/d04bb39a/54852a0eN6a93227e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '经典电影文学系列：阿甘正传'}
+2018-03-31 15:46:04 [CommoditSpider] INFO: result
+2018-03-31 15:46:04 [CommoditSpider] INFO: 1
+2018-03-31 15:46:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:04 [CommoditSpider] INFO: {'itemId': 59058976206973,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t4438/162/2502286270/541442/9346416d/58f08828N5824068a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '于丹 论语 心得'}
+2018-03-31 15:46:04 [CommoditSpider] INFO: result
+2018-03-31 15:46:04 [CommoditSpider] INFO: 1
+2018-03-31 15:46:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:04 [CommoditSpider] INFO: {'itemId': 71521511556147,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t13852/67/197568506/65137/2e9df40a/5a0566d8N7b05155d.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '习近平谈治国理政 第二卷（中文平装）'}
+2018-03-31 15:46:05 [CommoditSpider] INFO: result
+2018-03-31 15:46:05 [CommoditSpider] INFO: 1
+2018-03-31 15:46:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:05 [CommoditSpider] INFO: {'itemId': 29463580204873,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t6061/81/730791368/329364/8277302b/592bf164N2c6d2b50.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国科幻基石丛书·三体（1）/中国科幻银河奖特别获奖作品'}
+2018-03-31 15:46:05 [CommoditSpider] INFO: result
+2018-03-31 15:46:05 [CommoditSpider] INFO: 1
+2018-03-31 15:46:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:05 [CommoditSpider] INFO: {'itemId': 33992634272218,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t16534/222/2084168776/1001103/357100ed/5a77ca78Nf9e169be.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '解忧杂货店'}
+2018-03-31 15:46:06 [CommoditSpider] INFO: result
+2018-03-31 15:46:06 [CommoditSpider] INFO: 1
+2018-03-31 15:46:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:06 [CommoditSpider] INFO: {'itemId': 64047519627601,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t1441/343/143276299/84794/e0510e1c/555d8305N5bb5c1f0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '武志红心灵暖愈系列：身体知道答案+为何爱会伤人（套装共2册）'}
+2018-03-31 15:46:06 [CommoditSpider] INFO: result
+2018-03-31 15:46:06 [CommoditSpider] INFO: 1
+2018-03-31 15:46:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:06 [CommoditSpider] INFO: {'itemId': 84786373843440,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t958/13/725695028/138506/2afbee22/5540b1b8Ndd8fb049.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '女生贾梅全传'}
+2018-03-31 15:46:07 [CommoditSpider] INFO: result
+2018-03-31 15:46:07 [CommoditSpider] INFO: 1
+2018-03-31 15:46:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:07 [CommoditSpider] INFO: {'itemId': 64044789084030,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2491/209/1396000181/372051/7ca40f9b/569c7aefNd5fb189c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '千面英雄（精装）'}
+2018-03-31 15:46:07 [CommoditSpider] INFO: result
+2018-03-31 15:46:07 [CommoditSpider] INFO: 1
+2018-03-31 15:46:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:07 [CommoditSpider] INFO: {'itemId': 12181413652676,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t15271/120/1933374026/262921/db9dc0a9/5a615355Nae3d1b0c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '杨红樱笑猫日记：又见小可怜'}
+2018-03-31 15:46:07 [CommoditSpider] INFO: result
+2018-03-31 15:46:07 [CommoditSpider] INFO: 1
+2018-03-31 15:46:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:07 [CommoditSpider] INFO: {'itemId': 53729267366981,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t16987/300/507543982/703124/ef4facb8/5a8fc1f2N2391bedd.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '淘气包马小跳漫画升级版（第一辑套装全十册）'}
+2018-03-31 15:46:08 [CommoditSpider] INFO: result
+2018-03-31 15:46:08 [CommoditSpider] INFO: 1
+2018-03-31 15:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:08 [CommoditSpider] INFO: {'itemId': 26550922337107,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t2737/328/1405538066/202534/aab816bf/573d821aN9de83d79.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '自在独行：贾平凹的独行世界（陈坤推荐）'}
+2018-03-31 15:46:08 [CommoditSpider] INFO: result
+2018-03-31 15:46:08 [CommoditSpider] INFO: 1
+2018-03-31 15:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:08 [CommoditSpider] INFO: {'itemId': 98569922987748,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15580/128/2125230371/346649/92ccf62a/5a9236f1N531218cc.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '智力大挑战幼儿专注力培养（套装共12册）'}
+2018-03-31 15:46:09 [CommoditSpider] INFO: result
+2018-03-31 15:46:09 [CommoditSpider] INFO: 1
+2018-03-31 15:46:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:09 [CommoditSpider] INFO: {'itemId': 47295667813898,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15031/194/2294576543/298875/b2fb67a8/5a93c36fN0647eda2.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '环球国家地理百科全书（套装共10册）'}
+2018-03-31 15:46:09 [CommoditSpider] INFO: result
+2018-03-31 15:46:09 [CommoditSpider] INFO: 1
+2018-03-31 15:46:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:09 [CommoditSpider] INFO: {'itemId': 68596030566030,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t5707/335/77395073/785561/914b78d3/59155836N41b2fe0e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': 'DK机械运转的秘密 动物园大逃亡！（精装版 全彩）'}
+2018-03-31 15:46:10 [CommoditSpider] INFO: result
+2018-03-31 15:46:10 [CommoditSpider] INFO: 1
+2018-03-31 15:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:10 [CommoditSpider] INFO: {'itemId': 51475548296076,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15808/118/1462179270/345203/9b9b8123/5a52f0deN68e015f1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '父与子全集（套装共10册）'}
+2018-03-31 15:46:11 [CommoditSpider] INFO: result
+2018-03-31 15:46:11 [CommoditSpider] INFO: 1
+2018-03-31 15:46:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:11 [CommoditSpider] INFO: {'itemId': 67615842892232,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15301/196/2243879978/988202/98e92885/5a961443Nfaad5dff.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '伤心咖啡馆之歌（奥巴马送给两个女儿的礼物，孤独小说家麦卡勒斯的口碑神作）作家榜出 ...'}
+2018-03-31 15:46:11 [CommoditSpider] INFO: result
+2018-03-31 15:46:11 [CommoditSpider] INFO: 1
+2018-03-31 15:46:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:11 [CommoditSpider] INFO: {'itemId': 41847451790631,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2059/279/549453706/121202/250d8bb0/56163c4cN0fb30ab1.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '樱桃园·杨红樱注音童书 升级版：亲爱的笨笨猪（注音版）'}
+2018-03-31 15:46:12 [CommoditSpider] INFO: result
+2018-03-31 15:46:12 [CommoditSpider] INFO: 1
+2018-03-31 15:46:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:12 [CommoditSpider] INFO: {'itemId': 48742524829251,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t17827/172/93304178/346468/ac876f70/5a5d6113Ne7e2fe25.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '星火英语 英语六级真题试卷 2018年6月全真试题+标准模拟 词汇写作翻译听力阅 ...'}
+2018-03-31 15:46:12 [CommoditSpider] INFO: result
+2018-03-31 15:46:12 [CommoditSpider] INFO: 1
+2018-03-31 15:46:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-3.html#comfort>
+None
+2018-03-31 15:46:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:46:14 [CommoditSpider] INFO: {'itemId': 35801211106980,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9160/276/1950634648/369277/eea5bd4f/59c1fd19Neeadc6d0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '我不 大冰2017新书'}
+2018-03-31 15:46:14 [CommoditSpider] INFO: result
+2018-03-31 15:46:14 [CommoditSpider] INFO: 1
+2018-03-31 15:46:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:14 [CommoditSpider] INFO: {'itemId': 54218638988444,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t3283/110/726802147/140473/910083f0/57bd6127N15354d73.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '心理咨询与心理治疗（重排本）'}
+2018-03-31 15:46:15 [CommoditSpider] INFO: result
+2018-03-31 15:46:15 [CommoditSpider] INFO: 1
+2018-03-31 15:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:15 [CommoditSpider] INFO: {'itemId': 3455549292670,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t17140/353/532531605/449431/eff4caa5/5a922b31Nd3be1ee6.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '全脑思维开发（套装全12册）'}
+2018-03-31 15:46:15 [CommoditSpider] INFO: result
+2018-03-31 15:46:15 [CommoditSpider] INFO: 1
+2018-03-31 15:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:15 [CommoditSpider] INFO: {'itemId': 13579864550978,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t277/5/1706398271/379789/7db04c0e/544082d2Ne9f409bd.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '蔡康永的说话之道（套装共2册）'}
+2018-03-31 15:46:15 [CommoditSpider] INFO: result
+2018-03-31 15:46:15 [CommoditSpider] INFO: 1
+2018-03-31 15:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:15 [CommoditSpider] INFO: {'itemId': 60355869481046,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t1699/271/709675770/217576/f6b02c33/55b1a8beNfabcf6c5.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '阿弥陀佛么么哒'}
+2018-03-31 15:46:16 [CommoditSpider] INFO: result
+2018-03-31 15:46:16 [CommoditSpider] INFO: 1
+2018-03-31 15:46:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:16 [CommoditSpider] INFO: {'itemId': 52841768916414,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15685/13/1330946620/346688/5890d030/5a4f1527N004470d9.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '企鹅萌萌 婴幼儿童互动手工涂色绘本 AR涂色乐园（套装共6册）'}
+2018-03-31 15:46:16 [CommoditSpider] INFO: result
+2018-03-31 15:46:16 [CommoditSpider] INFO: 1
+2018-03-31 15:46:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:16 [CommoditSpider] INFO: {'itemId': 23548374302101,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9541/115/1090634552/136673/5056c1e5/59dc8af4Naaf75944.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '林汉达中国历史故事集（珍藏版 名家导读有声版）'}
+2018-03-31 15:46:17 [CommoditSpider] INFO: result
+2018-03-31 15:46:17 [CommoditSpider] INFO: 1
+2018-03-31 15:46:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:17 [CommoditSpider] INFO: {'itemId': 6056473187071,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t319/15/589155098/637993/bcbb005f/541a47d9Nb42044be.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '乖，摸摸头'}
+2018-03-31 15:46:17 [CommoditSpider] INFO: result
+2018-03-31 15:46:17 [CommoditSpider] INFO: 1
+2018-03-31 15:46:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:17 [CommoditSpider] INFO: {'itemId': 93745442095854,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2911/307/1126972720/600110/ed654fae/577624f7Nbf86a2bf.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '怪物大师 泯灭的灵魂碎片（第17部）'}
+2018-03-31 15:46:17 [CommoditSpider] INFO: result
+2018-03-31 15:46:17 [CommoditSpider] INFO: 1
+2018-03-31 15:46:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:17 [CommoditSpider] INFO: {'itemId': 38550226864602,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t7060/345/1462167358/255112/7c4b4eb8/59818c6eN634bd6f7.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '中国国家地理百科全书（套装共10册）'}
+2018-03-31 15:46:18 [CommoditSpider] INFO: result
+2018-03-31 15:46:18 [CommoditSpider] INFO: 1
+2018-03-31 15:46:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:18 [CommoditSpider] INFO: {'itemId': 38359421102199,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t13282/305/1438826242/547154/5d600bcd/5a20bb04N28b0873a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '洋洋兔童书·我们的节日：画给孩子的中国传统节日'}
+2018-03-31 15:46:18 [CommoditSpider] INFO: result
+2018-03-31 15:46:18 [CommoditSpider] INFO: 1
+2018-03-31 15:46:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:18 [CommoditSpider] INFO: {'itemId': 87933973490574,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3235/43/1426302686/269479/249c9d4c/57ccf79aNedd6e655.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '影响力（经典版）（新版）'}
+2018-03-31 15:46:19 [CommoditSpider] INFO: result
+2018-03-31 15:46:19 [CommoditSpider] INFO: 1
+2018-03-31 15:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:19 [CommoditSpider] INFO: {'itemId': 74659642068378,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t15178/236/2690386277/502775/f551b795/5ab0bc87N05221564.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '深见春夫“睡得香”图画书系列（彩色套装共5册）'}
+2018-03-31 15:46:19 [CommoditSpider] INFO: result
+2018-03-31 15:46:19 [CommoditSpider] INFO: 1
+2018-03-31 15:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:19 [CommoditSpider] INFO: {'itemId': 56259609052880,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t3757/38/34269690/485570/3f12bc2/57fc87a3N82181b12.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '现代汉语词典（第7版）'}
+2018-03-31 15:46:20 [CommoditSpider] INFO: result
+2018-03-31 15:46:20 [CommoditSpider] INFO: 1
+2018-03-31 15:46:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:20 [CommoditSpider] INFO: {'itemId': 93521514733777,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2764/316/1753762047/194541/d0aff889/5747b6daN5add41c2.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '为了你，我愿意热爱整个世界'}
+2018-03-31 15:46:20 [CommoditSpider] INFO: result
+2018-03-31 15:46:20 [CommoditSpider] INFO: 1
+2018-03-31 15:46:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:20 [CommoditSpider] INFO: {'itemId': 30244617771192,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t3388/63/1414069775/251733/d1ded900/5825258aN0b776483.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '幼儿睡前故事绘本(全套60册) 0-3-6岁童话书儿童启蒙认知早教'}
+2018-03-31 15:46:20 [CommoditSpider] INFO: result
+2018-03-31 15:46:20 [CommoditSpider] INFO: 1
+2018-03-31 15:46:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:20 [CommoditSpider] INFO: {'itemId': 41506039663404,
+ 'itemImg': 'http://img12.360buyimg.com/n3/g10/M00/00/17/rBEQWFEA2soIAAAAAAE4yeHX09AAAAJJgA4oUcAATjh341.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '学会提问（原书第10版）'}
+2018-03-31 15:46:21 [CommoditSpider] INFO: result
+2018-03-31 15:46:21 [CommoditSpider] INFO: 1
+2018-03-31 15:46:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:21 [CommoditSpider] INFO: {'itemId': 29625746028567,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t2206/103/2670824697/306366/aa91c1bd/5710ba56N69e1a27e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '学前儿童生理启蒙必备：我们的身体（3-6岁）'}
+2018-03-31 15:46:21 [CommoditSpider] INFO: result
+2018-03-31 15:46:21 [CommoditSpider] INFO: 1
+2018-03-31 15:46:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:21 [CommoditSpider] INFO: {'itemId': 25454507335045,
+ 'itemImg': 'http://img14.360buyimg.com/n3/g5/M02/03/02/rBEIDE_X7tcIAAAAAAD99olav70AAAmTwIx9MwAAP4O056.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '偷影子的人（随书附精美卡片）'}
+2018-03-31 15:46:22 [CommoditSpider] INFO: result
+2018-03-31 15:46:22 [CommoditSpider] INFO: 1
+2018-03-31 15:46:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:22 [CommoditSpider] INFO: {'itemId': 23655265921035,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2845/137/671207220/179213/71fdc9e8/57205794N2700363b.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '幸存者'}
+2018-03-31 15:46:22 [CommoditSpider] INFO: result
+2018-03-31 15:46:22 [CommoditSpider] INFO: 1
+2018-03-31 15:46:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-4.html#comfort>
+None
+2018-03-31 15:46:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort via http://localhost:8050/render.html> (referer: None)
+2018-03-31 15:46:24 [CommoditSpider] INFO: {'itemId': 17691562691007,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t3796/307/2114382153/274712/cbf9aa64/5840ecb0N8be4af6d.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '长安十二时辰（上下共两册）'}
+2018-03-31 15:46:24 [CommoditSpider] INFO: result
+2018-03-31 15:46:24 [CommoditSpider] INFO: 1
+2018-03-31 15:46:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:24 [CommoditSpider] INFO: {'itemId': 44255482448101,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t7936/164/369550961/520314/816eda15/59924963N9e9d0512.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '习近平的七年知青岁月'}
+2018-03-31 15:46:24 [CommoditSpider] INFO: result
+2018-03-31 15:46:24 [CommoditSpider] INFO: 1
+2018-03-31 15:46:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:24 [CommoditSpider] INFO: {'itemId': 67056596281189,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t14452/33/143579569/195775/a15c3bc1/5a24e220N4f79e319.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '邦臣小红花·我的第一套启蒙认知贴纸书（2-5岁 套装全8册）'}
+2018-03-31 15:46:25 [CommoditSpider] INFO: result
+2018-03-31 15:46:25 [CommoditSpider] INFO: 1
+2018-03-31 15:46:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:25 [CommoditSpider] INFO: {'itemId': 44048453348082,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t15460/222/1923663561/397528/a1b40c9c/5a5f0312N1d683d83.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新东方 四级词汇词根+联想记忆法'}
+2018-03-31 15:46:25 [CommoditSpider] INFO: result
+2018-03-31 15:46:25 [CommoditSpider] INFO: 1
+2018-03-31 15:46:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:25 [CommoditSpider] INFO: {'itemId': 70740242573068,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t11824/344/70950795/204778/f8cc11b6/59e71e10Nc2b1d800.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '皮囊'}
+2018-03-31 15:46:26 [CommoditSpider] INFO: result
+2018-03-31 15:46:26 [CommoditSpider] INFO: 1
+2018-03-31 15:46:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:26 [CommoditSpider] INFO: {'itemId': 71965122456120,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t5710/201/1974163722/97953/e1b3b3bf/592bf168Nfc31456e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '习近平用典（平装版）'}
+2018-03-31 15:46:26 [CommoditSpider] INFO: result
+2018-03-31 15:46:26 [CommoditSpider] INFO: 1
+2018-03-31 15:46:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:26 [CommoditSpider] INFO: {'itemId': 14587945076211,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t5893/196/8468838121/278266/e24b82ca/597b166bNed21644a.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '偷窥者'}
+2018-03-31 15:46:27 [CommoditSpider] INFO: result
+2018-03-31 15:46:27 [CommoditSpider] INFO: 1
+2018-03-31 15:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:27 [CommoditSpider] INFO: {'itemId': 17270136857813,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t15775/281/1782971544/189632/51186f02/5a5e209bNa09fc270.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '红宝书 (2019）考研英语词汇（必考词+基础词+超纲词）套装共5册'}
+2018-03-31 15:46:27 [CommoditSpider] INFO: result
+2018-03-31 15:46:27 [CommoditSpider] INFO: 1
+2018-03-31 15:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:27 [CommoditSpider] INFO: {'itemId': 4151637644024,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t9562/177/1395170810/144534/e61e23f/59e02012N10cdfd8c.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '自控力 斯坦福大学广受欢迎心理学课程（新版）'}
+2018-03-31 15:46:28 [CommoditSpider] INFO: result
+2018-03-31 15:46:28 [CommoditSpider] INFO: 1
+2018-03-31 15:46:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:28 [CommoditSpider] INFO: {'itemId': 51028591619397,
+ 'itemImg': 'http://img12.360buyimg.com/n3/jfs/t6049/120/736560958/623328/bd96290/592bf166Nd9fc488e.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '西方经济学 微观部分（第六版）'}
+2018-03-31 15:46:28 [CommoditSpider] INFO: result
+2018-03-31 15:46:28 [CommoditSpider] INFO: 1
+2018-03-31 15:46:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:28 [CommoditSpider] INFO: {'itemId': 18978848474796,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t16273/188/2376961810/152226/a3ce9817/5ab8ae1bN5bc7e6e3.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '自卑与超越（完整全译本）'}
+2018-03-31 15:46:29 [CommoditSpider] INFO: result
+2018-03-31 15:46:29 [CommoditSpider] INFO: 1
+2018-03-31 15:46:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:29 [CommoditSpider] INFO: {'itemId': 94386007757202,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t14404/91/586858957/350390/17e9e659/5a31f63bN8719e80b.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '月亮与六便士（2017新版！未删节插图珍藏本）（作家榜经典）'}
+2018-03-31 15:46:29 [CommoditSpider] INFO: result
+2018-03-31 15:46:29 [CommoditSpider] INFO: 1
+2018-03-31 15:46:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:29 [CommoditSpider] INFO: {'itemId': 26762480874195,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t17581/45/487828828/499729/2bb5a742/5a813fe7N42717af5.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '正面管教（修订版）'}
+2018-03-31 15:46:29 [CommoditSpider] INFO: result
+2018-03-31 15:46:29 [CommoditSpider] INFO: 1
+2018-03-31 15:46:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:29 [CommoditSpider] INFO: {'itemId': 39742781107927,
+ 'itemImg': 'http://img14.360buyimg.com/n3/jfs/t9847/320/10332756/188762/a8800e0e/59c365d3N024542af.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '基金从业资格考试教材2018 基金从业资格考试统编教材 证券投资基金（第二版）上 ...'}
+2018-03-31 15:46:30 [CommoditSpider] INFO: result
+2018-03-31 15:46:30 [CommoditSpider] INFO: 1
+2018-03-31 15:46:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:30 [CommoditSpider] INFO: {'itemId': 19759896433341,
+ 'itemImg': 'http://img11.360buyimg.com/n3/g14/M07/03/0F/rBEhVVHRG-8IAAAAAAhQzZZ529kAAArdAAuQ3YACFDl719.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '这个历史挺靠谱 袁腾飞讲历史（套装全3册 附光盘）'}
+2018-03-31 15:46:31 [CommoditSpider] INFO: result
+2018-03-31 15:46:31 [CommoditSpider] INFO: 1
+2018-03-31 15:46:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:31 [CommoditSpider] INFO: {'itemId': 81681900496950,
+ 'itemImg': 'http://img13.360buyimg.com/n3/jfs/t2833/360/2356290198/499895/543de4d6/5760b6c5N8537e3b0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '米小圈漫画成语（套装共4册）'}
+2018-03-31 15:46:31 [CommoditSpider] INFO: result
+2018-03-31 15:46:31 [CommoditSpider] INFO: 1
+2018-03-31 15:46:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:31 [CommoditSpider] INFO: {'itemId': 83205384044739,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t11374/244/539069943/467939/489eb7f1/59f2d817Ncfe21fba.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '新东方 词以类记：TOEFL iBT词汇'}
+2018-03-31 15:46:32 [CommoditSpider] INFO: result
+2018-03-31 15:46:32 [CommoditSpider] INFO: 1
+2018-03-31 15:46:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:32 [CommoditSpider] INFO: {'itemId': 72491892709534,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t2695/77/2375961305/246108/808e745b/57624115N6f52cdf4.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '金字塔原理：思考、表达和解决问题的逻辑'}
+2018-03-31 15:46:32 [CommoditSpider] INFO: result
+2018-03-31 15:46:32 [CommoditSpider] INFO: 1
+2018-03-31 15:46:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:32 [CommoditSpider] INFO: {'itemId': 39360690587649,
+ 'itemImg': 'http://img11.360buyimg.com/n3/jfs/t18544/332/367087753/159743/23b41373/5a70191cN636d7610.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '西方经济学（宏观部分·第七版）（21世纪经济学系列教材；普通高等教育“十一五”国 ...'}
+2018-03-31 15:46:33 [CommoditSpider] INFO: result
+2018-03-31 15:46:33 [CommoditSpider] INFO: 1
+2018-03-31 15:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:33 [CommoditSpider] INFO: {'itemId': 6345349397669,
+ 'itemImg': 'http://img10.360buyimg.com/n3/jfs/t14932/148/2589999247/489374/beb5f199/5aa9d3d6Ne9d88ec0.jpg',
+ 'itemPrice': '¥',
+ 'itemTitle': '斯蒂芬·霍金传：一个伟大物理学家的生命传奇'}
+2018-03-31 15:46:33 [CommoditSpider] INFO: result
+2018-03-31 15:46:33 [CommoditSpider] INFO: 1
+2018-03-31 15:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://book.jd.com/booktop/1713-0-0-0-10001-5.html#comfort>
+None
+2018-03-31 15:46:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-31 15:46:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3880,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/POST': 5,
+ 'downloader/response_bytes': 536743,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 31, 7, 46, 33, 813477),
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 106,
+ 'log_count/INFO': 308,
+ 'log_count/WARNING': 1,
+ 'offsite/filtered': 1,
+ 'request_depth_max': 5,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'splash/render.html/request_count': 5,
+ 'splash/render.html/response_count/200': 5,
+ 'start_time': datetime.datetime(2018, 3, 31, 7, 45, 42, 970668)}
+2018-03-31 15:46:33 [scrapy.core.engine] INFO: Spider closed (finished)
