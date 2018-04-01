@@ -124,9 +124,10 @@ SPIDER_MODULES = ['ScrapyCommodit.spiders']
 NEWSPIDER_MODULE = 'ScrapyCommodit.spiders'
 
 # mysql
-MYSQL_HOST = '45.78.41.83'
+# MYSQL_HOST = '45.78.41.83'
+MYSQL_HOST = 'localhost'
 MYSQL_USER = 'tabzjh'
-MYSQL_PASSWORD = '1234567899'
+MYSQL_PASSWORD = ''
 MYSQL_DB_NAME = "commodititem"
 
 LOG_FILE = "log.txt"

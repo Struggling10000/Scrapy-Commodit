@@ -15,12 +15,12 @@ class ScrapycommoditPipeline(object):
 
 class MysqlPipeline(object):
     host = 'localhost'
-    user = 'root'
-    password = ''
-    dbname = 'test'
+    user = 'tabzjh'
+    password = '1234567899'
+    dbname = 'commodititem'
     db = None
     cursor = None
-    sql = 'INSERT INTO item(itemId,itemTitle,itemPrice,itemImg) VALUES("%s","%s","%s","%s")'
+    sql = 'INSERT INTO item(itemTitle,itemPrice,itemImg) VALUES("%s","%s","%s")'
 
     def __init__(self):
         self.host = settings['MYSQL_HOST']
@@ -46,8 +46,8 @@ class MysqlPipeline(object):
     def process_item(self, item, spider):
         spider.logger.info(item)
         try:
-            result = self.cursor.execute(self.sql % (float(item['itemId']), str(
-                item['itemTitle']), str(item['itemPrice']), str(item['itemImg'])))
+            result = self.cursor.execute(self.sql % (
+                str(item['itemTitle']), str(item['itemPrice']), str(item['itemImg'])))
             spider.logger.info("result")
             spider.logger.info(result)
         except Exception as e:

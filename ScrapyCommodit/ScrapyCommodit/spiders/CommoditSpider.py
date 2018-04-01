@@ -33,8 +33,8 @@ class CommoditspiderSpider(scrapy.Spider):
                 # print(li.extract())
                 item = ScrapycommoditItem()
 
-                random.seed()
-                item["itemId"] = int(random.random()*100000000000000)
+                # random.seed()
+                # item["itemId"] = int(random.random()*100000000000000)
 
                 img = li.xpath(
                     'div[2]/a/img/@data-lazy-img').extract()[0].replace("\r\n", "").strip()
